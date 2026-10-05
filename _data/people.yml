@@ -32,7 +32,7 @@ groups:
       - name: "Dr. Seema Kumari"
         role: "Post-Doctoral Fellow, IIT Gandhinagar; PhD, EE, 2020–2026"
         photo: seema-kumari.jpg
-        links: { scholar: https://scholar.google.com/citations?user=MMUzn-AAAAAJ }
+        links: { scholar: https://scholar.google.com/citations?user=MMUzn-AAAAAJ, linkedin: https://www.linkedin.com/in/seema-kumari-58b090128/ }
         topic: "Restoration and analysis of 3D point clouds"
 
   - title: Ph.D. Scholars
@@ -40,32 +40,35 @@ groups:
       - name: "Akbar Ali"
         role: "PhD, CSE, since 2023"
         photo: akbar-ali.jpg
-        links: { website: https://aamaanakbar.github.io/, scholar: https://scholar.google.com/citations?user=g-2Aix8AAAAJ, github: https://github.com/aamaanakbar }
+        links: { website: https://aamaanakbar.github.io/, scholar: https://scholar.google.com/citations?user=g-2Aix8AAAAJ, github: https://github.com/aamaanakbar, linkedin: https://www.linkedin.com/in/aamaanakbar/ }
         fellowships: ["Visvesvaraya Fellow"]
       - name: "Anupam Sharma"
         role: "PhD, CSE, since 2024"
         photo: anupam-sharma.jpg
-        links: { website: https://anupamsharma.in/, scholar: https://scholar.google.com/citations?user=ZOYSYJEAAAAJ, github: https://github.com/anp-scp }
+        links: { website: https://anupamsharma.in/, scholar: https://scholar.google.com/citations?user=ZOYSYJEAAAAJ, github: https://github.com/anp-scp, linkedin: https://www.linkedin.com/in/anupam-sh/ }
         topic: "EEG representation learning"
         fellowships: ["Director’s Fellow"]
       - name: "Arjun Badola"
         role: "PhD, AI, since 2024"
+        photo: arjun-badola.jpg
         links: { linkedin: https://www.linkedin.com/in/arjun-badola/ }
         fellowships: ["Visvesvaraya Fellow", "Qualcomm Innovation Fellow"]
       - name: "Dikshit Hegde"
         role: "PhD, CSE, since 2025"
         photo: dikshit-hegde.jpg
-        links: { website: https://dikshithegde.github.io/, scholar: https://scholar.google.com/citations?user=KZYwiasAAAAJ, github: https://github.com/DikshitHegde }
+        links: { website: https://dikshithegde.github.io/, scholar: https://scholar.google.com/citations?user=KZYwiasAAAAJ, github: https://github.com/DikshitHegde, linkedin: https://www.linkedin.com/in/dikshit-hegde/ }
         fellowships: ["IndiaAI PhD Fellow", "Qualcomm Innovation Fellow"]
       - name: "Ashutosh Gupta"
         role: "PhD, AI, since 2024"
         photo: ashutosh-gupta.jpg
-        links: { scholar: https://scholar.google.com/citations?user=GNekfLwAAAAJ }
+        links: { scholar: https://scholar.google.com/citations?user=GNekfLwAAAAJ, linkedin: https://www.linkedin.com/in/ashutosh-gupta-imagine/ }
         topic: "Image despeckling"
         affiliations: ["IITGN–SAC"]
       - name: "Saurabh Tripathi"
         role: "PhD, AI, since 2024"
+        photo: saurabh-tripathi.jpg
         affiliations: ["IITGN–SAC"]
+        links: { linkedin: https://www.linkedin.com/in/saurabh-tripathi-118328182/ }
       - name: "Ankur Garg"
         role: "PhD, EE, since 2025"
         photo: ankur-garg.jpg
@@ -87,15 +90,23 @@ groups:
       - name: "John Debbarma"
         role: "Dual Degree, CSE"
         photo: john-debbarma.jpg
-        links: { github: https://github.com/JohnTwiprahamDebbarma }
+        links: { github: https://github.com/JohnTwiprahamDebbarma, linkedin: https://www.linkedin.com/in/john-twipraham-debbarma/ }
       - name: "Deepanjali Kumari"
         role: "Dual Degree, CSE"
+        photo: deepanjali-kumari.jpg
+        links: { linkedin: https://www.linkedin.com/in/deepanjali-kumari-1439a7277/ }
       - name: "Pankaj"
         role: "Dual Degree, CSE"
+        photo: pankaj.jpg
+        links: { linkedin: https://www.linkedin.com/in/pankaj-gadhwal/ }
       - name: "Sinngam Khaidem"
         role: "M.Tech, CSE"
+        photo: sinngam-khaidem.jpg
+        links: { linkedin: https://www.linkedin.com/in/sinngam-khaidem20/ }
       - name: "Arka Dutta"
         role: "M.Tech, AI"
+        photo: arka-dutta.jpg
+        links: { linkedin: https://www.linkedin.com/in/arkadutta28/ }
       - name: "Hement Shekhar Mohanty"
         role: "M.Tech, AI"
       - name: "Akhil Maan"
@@ -106,19 +117,26 @@ groups:
         role: "M.Tech, CSE/AI"
       - name: "Malla Jeevan Kumar"
         role: "M.Tech, CSE/AI"
+        photo: malla-jeevan-kumar.jpg
+        links: { linkedin: https://www.linkedin.com/in/mallajeevankumar/ }
       - name: "Mohit Kumar"
         role: "M.Tech, CSE/AI"
       - name: "Rakesh Kumar"
         role: "M.Tech, CSE/AI"
       - name: "Anvesh Jadhav"
         role: "Dual Degree, EE"
+        photo: anvesh-jadhav.jpg
+        links: { linkedin: https://www.linkedin.com/in/anvesh-jadhav/ }
       - name: "Arnav Jagtap"
         role: "Dual Degree, EE"
+        photo: arnav-jagtap.jpg
         links: { linkedin: https://www.linkedin.com/in/arnavjagtap/ }
       - name: "Kancheti Aparna Mala"
         role: "M.Tech, EE"
       - name: "Amisha Vaghela"
         role: "M.Tech, EE"
+        photo: amisha-vaghela.jpg
+        links: { linkedin: https://www.linkedin.com/in/amisha-vaghela-4b450725a/ }
 
 # PhD alumni (newest first), from the team page at shanmugaiit.github.io/team.html.
 # `now` = current position (optional).
