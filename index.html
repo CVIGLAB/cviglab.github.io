@@ -1,325 +1,125 @@
 <!DOCTYPE html>
-<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="en-US"><![endif]-->
-<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="en-US">	<![endif]-->
-<!--[if IE 9]><html class="ie ie9 lte9" lang="en-US"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html class="noIE" lang="en-US">
-<!--<![endif]-->
-	<head>
-		<title>CVIG Lab</title>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CVIG Lab &mdash; Computer Vision, Imaging &amp; Graphics, IIT Gandhinagar</title>
+<meta name="description" content="The Computer Vision, Imaging & Graphics (CVIG) Lab at IIT Gandhinagar, led by Prof. Shanmuganathan Raman across the Electrical Engineering and Computer Science & Engineering departments — research in computer vision, computational imaging, graphics, and deep learning.">
+<meta property="og:title" content="CVIG Lab — Computer Vision, Imaging & Graphics, IIT Gandhinagar">
+<meta property="og:description" content="Algorithms that capture, reconstruct, and interpret the visual world.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231e40af'/%3E%3Cstop offset='0.5' stop-color='%232a52e0'/%3E%3Cstop offset='1' stop-color='%234f74e8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230e1016'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='url(%23g)' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='5' fill='url(%23g)'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-		<!-- meta -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
-		
-		<!-- google fonts -->
-		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans'>
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold"/>
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alegreya+Sans:regular,italic,bold,bolditalic"/>
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nixie+One:regular,italic,bold,bolditalic"/>
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alegreya+SC:regular,italic,bold,bolditalic"/>
-		
-		<!-- css -->
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-		<link rel="stylesheet" href="assets/css/style.css" media="screen"/>
+<header class="nav"><div class="wrap nav__inner">
+  <a class="brand" href="#top"><img class="brand__mark" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='m' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231e40af'/%3E%3Cstop offset='0.5' stop-color='%232a52e0'/%3E%3Cstop offset='1' stop-color='%234f74e8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%230e1016'/%3E%3Ccircle cx='16' cy='16' r='7.5' fill='none' stroke='url(%23m)' stroke-width='2.4'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='url(%23m)'/%3E%3C/svg%3E" alt="" width="26" height="26">CVIG&nbsp;Lab<span class="brand__sub">IIT&nbsp;Gandhinagar</span></a>
+  <input type="checkbox" id="navtoggle" class="nav-toggle" aria-hidden="true">
+  <label class="nav-burger" for="navtoggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+  <nav class="nav-links" aria-label="Primary"><a href="#research">Research</a><a href="publications.html">Publications</a><a href="people.html">People</a><a href="#news">News</a><a href="#join" class="nav-cta">Join</a></nav>
+</div></header>
 
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-			<script src="assets/js/html5shiv.js"></script>
-			<script src="assets/js/respond.js"></script>
-		<![endif]-->
+<main id="top">
+<section class="hero"><div class="wrap"><div class="hero__grid">
+  <div class="hero__intro">
+    <p class="eyebrow hero__eyebrow">IIT Gandhinagar &middot; Established 2013</p>
+    <h1>Computer Vision,<br>Imaging <span class="amp">&amp;</span> Graphics</h1>
+    <p class="hero__lede">We build algorithms that capture, reconstruct, and interpret the visual world &mdash; from a single ray of light to a full three-dimensional scene.</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="#research">Explore research</a>
+      <a class="btn btn--ghost" href="#join">Join the lab</a>
+    </div>
+    <p class="hero__pi"><strong>Prof. Shanmuganathan Raman</strong> &middot; Principal Investigator<br>Dr Vilas Mujumdar Chair &middot; Professor &amp; Head, Computer Science &amp; Engineering &middot; Professor, Electrical Engineering</p>
+  </div>
+  <figure class="hero__figure"><svg viewBox="0 0 520 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A grid of sampled points of light forming an abstract image"><defs><radialGradient id="glow" cx="42%" cy="38%" r="60%"><stop offset="0" stop-color="#2a52e0" stop-opacity="0.22"/><stop offset="1" stop-color="#2a52e0" stop-opacity="0"/></radialGradient></defs><rect width="520" height="430" fill="url(#glow)"/><circle cx="9" cy="9" r="1.35" fill="#1e3b8e" opacity="0.18"/><circle cx="28" cy="9" r="1.45" fill="#1f3d97" opacity="0.19"/><circle cx="47" cy="9" r="1.56" fill="#21409f" opacity="0.21"/><circle cx="66" cy="9" r="1.70" fill="#2242a8" opacity="0.22"/><circle cx="85" cy="9" r="1.83" fill="#2344b0" opacity="0.23"/><circle cx="104" cy="9" r="1.97" fill="#2447b8" opacity="0.25"/><circle cx="123" cy="9" r="2.11" fill="#2549c1" opacity="0.26"/><circle cx="142" cy="9" r="2.25" fill="#264bc9" opacity="0.27"/><circle cx="161" cy="9" r="2.39" fill="#284ed2" opacity="0.29"/><circle cx="180" cy="9" r="2.55" fill="#2950da" opacity="0.30"/><circle cx="199" cy="9" r="2.72" fill="#2b53e0" opacity="0.32"/><circle cx="218" cy="9" r="2.90" fill="#3058e2" opacity="0.34"/><circle cx="237" cy="9" r="3.06" fill="#355de4" opacity="0.36"/><circle cx="256" cy="9" r="3.17" fill="#3a62e7" opacity="0.37"/><circle cx="275" cy="9" r="3.19" fill="#3f66e9" opacity="0.37"/><circle cx="294" cy="9" r="3.11" fill="#446beb" opacity="0.36"/><circle cx="313" cy="9" r="2.92" fill="#4870ed" opacity="0.34"/><circle cx="332" cy="9" r="2.66" fill="#4d75ef" opacity="0.32"/><circle cx="351" cy="9" r="2.37" fill="#5279f1" opacity="0.29"/><circle cx="370" cy="9" r="2.09" fill="#577ef3" opacity="0.26"/><circle cx="389" cy="9" r="1.85" fill="#5d84f5" opacity="0.23"/><circle cx="408" cy="9" r="1.66" fill="#668bf6" opacity="0.22"/><circle cx="427" cy="9" r="1.52" fill="#6f93f7" opacity="0.20"/><circle cx="446" cy="9" r="1.42" fill="#799bf8" opacity="0.19"/><circle cx="465" cy="9" r="1.33" fill="#82a2f9" opacity="0.18"/><circle cx="484" cy="9" r="1.27" fill="#8baafa" opacity="0.18"/><circle cx="503" cy="9" r="1.21" fill="#95b2fb" opacity="0.17"/><circle cx="9" cy="28" r="1.50" fill="#1e3b8f" opacity="0.20"/><circle cx="28" cy="28" r="1.66" fill="#1f3d98" opacity="0.22"/><circle cx="47" cy="28" r="1.85" fill="#2140a0" opacity="0.24"/><circle cx="66" cy="28" r="2.06" fill="#2242a9" opacity="0.26"/><circle cx="85" cy="28" r="2.29" fill="#2345b1" opacity="0.28"/><circle cx="104" cy="28" r="2.51" fill="#2447ba" opacity="0.30"/><circle cx="123" cy="28" r="2.73" fill="#2549c2" opacity="0.32"/><circle cx="142" cy="28" r="2.93" fill="#274ccb" opacity="0.34"/><circle cx="161" cy="28" r="3.14" fill="#284ed3" opacity="0.36"/><circle cx="180" cy="28" r="3.36" fill="#2950dc" opacity="0.39"/><circle cx="199" cy="28" r="3.59" fill="#2c54e1" opacity="0.41"/><circle cx="218" cy="28" r="3.82" fill="#3159e3" opacity="0.43"/><circle cx="237" cy="28" r="4.03" fill="#365ee5" opacity="0.45"/><circle cx="256" cy="28" r="4.17" fill="#3b62e7" opacity="0.47"/><circle cx="275" cy="28" r="4.18" fill="#3f67e9" opacity="0.47"/><circle cx="294" cy="28" r="4.05" fill="#446ceb" opacity="0.46"/><circle cx="313" cy="28" r="3.78" fill="#4970ed" opacity="0.43"/><circle cx="332" cy="28" r="3.42" fill="#4e75ef" opacity="0.39"/><circle cx="351" cy="28" r="3.02" fill="#537af1" opacity="0.35"/><circle cx="370" cy="28" r="2.64" fill="#587ff3" opacity="0.31"/><circle cx="389" cy="28" r="2.32" fill="#5e85f5" opacity="0.28"/><circle cx="408" cy="28" r="2.07" fill="#678cf6" opacity="0.26"/><circle cx="427" cy="28" r="1.88" fill="#7194f7" opacity="0.24"/><circle cx="446" cy="28" r="1.71" fill="#7a9cf8" opacity="0.22"/><circle cx="465" cy="28" r="1.57" fill="#83a3f9" opacity="0.21"/><circle cx="484" cy="28" r="1.45" fill="#8dabfa" opacity="0.19"/><circle cx="503" cy="28" r="1.34" fill="#96b3fb" opacity="0.18"/><circle cx="9" cy="47" r="1.71" fill="#1e3b90" opacity="0.22"/><circle cx="28" cy="47" r="1.95" fill="#203e99" opacity="0.25"/><circle cx="47" cy="47" r="2.24" fill="#2140a1" opacity="0.27"/><circle cx="66" cy="47" r="2.56" fill="#2243aa" opacity="0.31"/><circle cx="85" cy="47" r="2.90" fill="#2345b2" opacity="0.34"/><circle cx="104" cy="47" r="3.22" fill="#2447bb" opacity="0.37"/><circle cx="123" cy="47" r="3.53" fill="#264ac3" opacity="0.40"/><circle cx="142" cy="47" r="3.82" fill="#274ccc" opacity="0.43"/><circle cx="161" cy="47" r="4.09" fill="#284ed4" opacity="0.46"/><circle cx="180" cy="47" r="4.35" fill="#2951dd" opacity="0.49"/><circle cx="199" cy="47" r="4.62" fill="#2d55e1" opacity="0.51"/><circle cx="218" cy="47" r="4.88" fill="#3259e3" opacity="0.54"/><circle cx="237" cy="47" r="5.10" fill="#365ee5" opacity="0.56"/><circle cx="256" cy="47" r="5.23" fill="#3b63e7" opacity="0.57"/><circle cx="275" cy="47" r="5.21" fill="#4068e9" opacity="0.57"/><circle cx="294" cy="47" r="5.02" fill="#456ceb" opacity="0.55"/><circle cx="313" cy="47" r="4.67" fill="#4a71ed" opacity="0.52"/><circle cx="332" cy="47" r="4.22" fill="#4f76ef" opacity="0.47"/><circle cx="351" cy="47" r="3.74" fill="#537bf1" opacity="0.42"/><circle cx="370" cy="47" r="3.30" fill="#587ff4" opacity="0.38"/><circle cx="389" cy="47" r="2.94" fill="#5f86f5" opacity="0.34"/><circle cx="408" cy="47" r="2.65" fill="#698df6" opacity="0.32"/><circle cx="427" cy="47" r="2.41" fill="#7295f7" opacity="0.29"/><circle cx="446" cy="47" r="2.19" fill="#7b9df8" opacity="0.27"/><circle cx="465" cy="47" r="1.97" fill="#85a4f9" opacity="0.25"/><circle cx="484" cy="47" r="1.75" fill="#8eacfa" opacity="0.23"/><circle cx="503" cy="47" r="1.56" fill="#97b4fb" opacity="0.21"/><circle cx="9" cy="66" r="1.96" fill="#1f3c91" opacity="0.25"/><circle cx="28" cy="66" r="2.31" fill="#203e9a" opacity="0.28"/><circle cx="47" cy="66" r="2.72" fill="#2140a2" opacity="0.32"/><circle cx="66" cy="66" r="3.17" fill="#2243ab" opacity="0.37"/><circle cx="85" cy="66" r="3.64" fill="#2345b3" opacity="0.41"/><circle cx="104" cy="66" r="4.09" fill="#2548bc" opacity="0.46"/><circle cx="123" cy="66" r="4.50" fill="#264ac4" opacity="0.50"/><circle cx="142" cy="66" r="4.87" fill="#274ccd" opacity="0.54"/><circle cx="161" cy="66" r="5.18" fill="#284fd5" opacity="0.57"/><circle cx="180" cy="66" r="5.46" fill="#2951de" opacity="0.60"/><circle cx="199" cy="66" r="5.71" fill="#2d55e1" opacity="0.62"/><circle cx="218" cy="66" r="5.94" fill="#325ae3" opacity="0.64"/><circle cx="237" cy="66" r="6.11" fill="#375fe5" opacity="0.66"/><circle cx="256" cy="66" r="6.18" fill="#3c64e7" opacity="0.67"/><circle cx="275" cy="66" r="6.10" fill="#4168e9" opacity="0.66"/><circle cx="294" cy="66" r="5.84" fill="#466dec" opacity="0.63"/><circle cx="313" cy="66" r="5.43" fill="#4a72ee" opacity="0.59"/><circle cx="332" cy="66" r="4.93" fill="#4f76f0" opacity="0.54"/><circle cx="351" cy="66" r="4.44" fill="#547bf2" opacity="0.49"/><circle cx="370" cy="66" r="4.01" fill="#5980f4" opacity="0.45"/><circle cx="389" cy="66" r="3.66" fill="#6187f5" opacity="0.42"/><circle cx="408" cy="66" r="3.38" fill="#6a8ef6" opacity="0.39"/><circle cx="427" cy="66" r="3.12" fill="#7396f7" opacity="0.36"/><circle cx="446" cy="66" r="2.83" fill="#7d9ef8" opacity="0.33"/><circle cx="465" cy="66" r="2.51" fill="#86a5f9" opacity="0.30"/><circle cx="484" cy="66" r="2.17" fill="#8fadfa" opacity="0.27"/><circle cx="503" cy="66" r="1.86" fill="#98b5fb" opacity="0.24"/><circle cx="9" cy="85" r="2.25" fill="#1f3c93" opacity="0.27"/><circle cx="28" cy="85" r="2.70" fill="#203e9b" opacity="0.32"/><circle cx="47" cy="85" r="3.24" fill="#2141a4" opacity="0.37"/><circle cx="66" cy="85" r="3.84" fill="#2243ac" opacity="0.43"/><circle cx="85" cy="85" r="4.45" fill="#2446b5" opacity="0.49"/><circle cx="104" cy="85" r="5.04" fill="#2548bd" opacity="0.55"/><circle cx="123" cy="85" r="5.55" fill="#264ac6" opacity="0.61"/><circle cx="142" cy="85" r="5.98" fill="#274dce" opacity="0.65"/><circle cx="161" cy="85" r="6.31" fill="#284fd6" opacity="0.68"/><circle cx="180" cy="85" r="6.56" fill="#2951df" opacity="0.71"/><circle cx="199" cy="85" r="6.74" fill="#2e56e1" opacity="0.72"/><circle cx="218" cy="85" r="6.87" fill="#335be4" opacity="0.74"/><circle cx="237" cy="85" r="6.92" fill="#385fe6" opacity="0.74"/><circle cx="256" cy="85" r="6.87" fill="#3d64e8" opacity="0.74"/><circle cx="275" cy="85" r="6.68" fill="#4169ea" opacity="0.72"/><circle cx="294" cy="85" r="6.35" fill="#466eec" opacity="0.69"/><circle cx="313" cy="85" r="5.91" fill="#4b72ee" opacity="0.64"/><circle cx="332" cy="85" r="5.44" fill="#5077f0" opacity="0.59"/><circle cx="351" cy="85" r="5.00" fill="#557cf2" opacity="0.55"/><circle cx="370" cy="85" r="4.65" fill="#5a81f4" opacity="0.52"/><circle cx="389" cy="85" r="4.39" fill="#6288f5" opacity="0.49"/><circle cx="408" cy="85" r="4.17" fill="#6b8ff6" opacity="0.47"/><circle cx="427" cy="85" r="3.91" fill="#7497f7" opacity="0.44"/><circle cx="446" cy="85" r="3.56" fill="#7e9ff8" opacity="0.41"/><circle cx="465" cy="85" r="3.14" fill="#87a6f9" opacity="0.36"/><circle cx="484" cy="85" r="2.67" fill="#90aefa" opacity="0.32"/><circle cx="503" cy="85" r="2.21" fill="#9ab6fb" opacity="0.27"/><circle cx="9" cy="104" r="2.52" fill="#1f3c94" opacity="0.30"/><circle cx="28" cy="104" r="3.08" fill="#203f9c" opacity="0.36"/><circle cx="47" cy="104" r="3.75" fill="#2141a5" opacity="0.43"/><circle cx="66" cy="104" r="4.48" fill="#2243ad" opacity="0.50"/><circle cx="85" cy="104" r="5.24" fill="#2446b6" opacity="0.57"/><circle cx="104" cy="104" r="5.94" fill="#2548be" opacity="0.64"/><circle cx="123" cy="104" r="6.55" fill="#264bc7" opacity="0.71"/><circle cx="142" cy="104" r="7.03" fill="#274dcf" opacity="0.75"/><circle cx="161" cy="104" r="7.35" fill="#284fd8" opacity="0.78"/><circle cx="180" cy="104" r="7.52" fill="#2a52e0" opacity="0.80"/><circle cx="199" cy="104" r="7.58" fill="#2f57e2" opacity="0.81"/><circle cx="218" cy="104" r="7.55" fill="#345be4" opacity="0.80"/><circle cx="237" cy="104" r="7.43" fill="#3860e6" opacity="0.79"/><circle cx="256" cy="104" r="7.23" fill="#3d65e8" opacity="0.77"/><circle cx="275" cy="104" r="6.92" fill="#426aea" opacity="0.74"/><circle cx="294" cy="104" r="6.53" fill="#476eec" opacity="0.70"/><circle cx="313" cy="104" r="6.10" fill="#4c73ee" opacity="0.66"/><circle cx="332" cy="104" r="5.69" fill="#5178f0" opacity="0.62"/><circle cx="351" cy="104" r="5.36" fill="#557cf2" opacity="0.59"/><circle cx="370" cy="104" r="5.15" fill="#5a81f4" opacity="0.56"/><circle cx="389" cy="104" r="5.01" fill="#6389f5" opacity="0.55"/><circle cx="408" cy="104" r="4.86" fill="#6c90f6" opacity="0.54"/><circle cx="427" cy="104" r="4.62" fill="#7698f7" opacity="0.51"/><circle cx="446" cy="104" r="4.24" fill="#7fa0f8" opacity="0.47"/><circle cx="465" cy="104" r="3.72" fill="#88a7f9" opacity="0.42"/><circle cx="484" cy="104" r="3.12" fill="#92affa" opacity="0.36"/><circle cx="503" cy="104" r="2.53" fill="#9bb7fb" opacity="0.30"/><circle cx="9" cy="123" r="2.74" fill="#1f3d95" opacity="0.32"/><circle cx="28" cy="123" r="3.40" fill="#203f9d" opacity="0.39"/><circle cx="47" cy="123" r="4.17" fill="#2141a6" opacity="0.47"/><circle cx="66" cy="123" r="5.01" fill="#2344ae" opacity="0.55"/><circle cx="85" cy="123" r="5.88" fill="#2446b7" opacity="0.64"/><circle cx="104" cy="123" r="6.68" fill="#2549bf" opacity="0.72"/><circle cx="123" cy="123" r="7.36" fill="#264bc8" opacity="0.79"/><circle cx="142" cy="123" r="7.85" fill="#274dd0" opacity="0.84"/><circle cx="161" cy="123" r="8.14" fill="#2950d9" opacity="0.86"/><circle cx="180" cy="123" r="8.23" fill="#2b52e0" opacity="0.87"/><circle cx="199" cy="123" r="8.15" fill="#2f57e2" opacity="0.86"/><circle cx="218" cy="123" r="7.94" fill="#345ce4" opacity="0.84"/><circle cx="237" cy="123" r="7.65" fill="#3961e6" opacity="0.81"/><circle cx="256" cy="123" r="7.28" fill="#3e65e8" opacity="0.78"/><circle cx="275" cy="123" r="6.88" fill="#436aea" opacity="0.74"/><circle cx="294" cy="123" r="6.45" fill="#486fec" opacity="0.69"/><circle cx="313" cy="123" r="6.05" fill="#4c74ee" opacity="0.66"/><circle cx="332" cy="123" r="5.73" fill="#5178f1" opacity="0.62"/><circle cx="351" cy="123" r="5.54" fill="#567df3" opacity="0.60"/><circle cx="370" cy="123" r="5.45" fill="#5b82f5" opacity="0.60"/><circle cx="389" cy="123" r="5.42" fill="#648af6" opacity="0.59"/><circle cx="408" cy="123" r="5.34" fill="#6e91f7" opacity="0.58"/><circle cx="427" cy="123" r="5.11" fill="#7799f8" opacity="0.56"/><circle cx="446" cy="123" r="4.69" fill="#80a1f9" opacity="0.52"/><circle cx="465" cy="123" r="4.10" fill="#8aa9fa" opacity="0.46"/><circle cx="484" cy="123" r="3.41" fill="#93b0fa" opacity="0.39"/><circle cx="503" cy="123" r="2.74" fill="#9cb8fb" opacity="0.32"/><circle cx="9" cy="142" r="2.88" fill="#1f3d96" opacity="0.34"/><circle cx="28" cy="142" r="3.59" fill="#203f9f" opacity="0.41"/><circle cx="47" cy="142" r="4.42" fill="#2242a7" opacity="0.49"/><circle cx="66" cy="142" r="5.33" fill="#2344af" opacity="0.58"/><circle cx="85" cy="142" r="6.26" fill="#2446b8" opacity="0.68"/><circle cx="104" cy="142" r="7.12" fill="#2549c0" opacity="0.76"/><circle cx="123" cy="142" r="7.83" fill="#264bc9" opacity="0.83"/><circle cx="142" cy="142" r="8.30" fill="#284ed1" opacity="0.88"/><circle cx="161" cy="142" r="8.30" fill="#2950da" opacity="0.88"/><circle cx="180" cy="142" r="8.30" fill="#2b53e0" opacity="0.88"/><circle cx="199" cy="142" r="8.30" fill="#3058e2" opacity="0.88"/><circle cx="218" cy="142" r="8.04" fill="#355de4" opacity="0.85"/><circle cx="237" cy="142" r="7.61" fill="#3a61e6" opacity="0.81"/><circle cx="256" cy="142" r="7.14" fill="#3e66e8" opacity="0.76"/><circle cx="275" cy="142" r="6.68" fill="#436beb" opacity="0.72"/><circle cx="294" cy="142" r="6.27" fill="#4870ed" opacity="0.68"/><circle cx="313" cy="142" r="5.93" fill="#4d74ef" opacity="0.64"/><circle cx="332" cy="142" r="5.71" fill="#5279f1" opacity="0.62"/><circle cx="351" cy="142" r="5.61" fill="#577ef3" opacity="0.61"/><circle cx="370" cy="142" r="5.61" fill="#5c83f5" opacity="0.61"/><circle cx="389" cy="142" r="5.62" fill="#668bf6" opacity="0.61"/><circle cx="408" cy="142" r="5.54" fill="#6f92f7" opacity="0.60"/><circle cx="427" cy="142" r="5.29" fill="#789af8" opacity="0.58"/><circle cx="446" cy="142" r="4.83" fill="#81a2f9" opacity="0.53"/><circle cx="465" cy="142" r="4.20" fill="#8baafa" opacity="0.47"/><circle cx="484" cy="142" r="3.48" fill="#94b1fb" opacity="0.40"/><circle cx="503" cy="142" r="2.79" fill="#9db9fc" opacity="0.33"/><circle cx="9" cy="161" r="2.90" fill="#1f3d97" opacity="0.34"/><circle cx="28" cy="161" r="3.62" fill="#2140a0" opacity="0.41"/><circle cx="47" cy="161" r="4.46" fill="#2242a8" opacity="0.50"/><circle cx="66" cy="161" r="5.38" fill="#2344b1" opacity="0.59"/><circle cx="85" cy="161" r="6.32" fill="#2447b9" opacity="0.68"/><circle cx="104" cy="161" r="7.18" fill="#2549c2" opacity="0.77"/><circle cx="123" cy="161" r="7.88" fill="#274cca" opacity="0.84"/><circle cx="142" cy="161" r="8.30" fill="#284ed3" opacity="0.88"/><circle cx="161" cy="161" r="8.30" fill="#2950db" opacity="0.88"/><circle cx="180" cy="161" r="8.30" fill="#2c54e0" opacity="0.88"/><circle cx="199" cy="161" r="8.27" fill="#3158e3" opacity="0.88"/><circle cx="218" cy="161" r="7.87" fill="#355de5" opacity="0.84"/><circle cx="237" cy="161" r="7.39" fill="#3a62e7" opacity="0.79"/><circle cx="256" cy="161" r="6.92" fill="#3f67e9" opacity="0.74"/><circle cx="275" cy="161" r="6.49" fill="#446beb" opacity="0.70"/><circle cx="294" cy="161" r="6.15" fill="#4970ed" opacity="0.66"/><circle cx="313" cy="161" r="5.91" fill="#4e75ef" opacity="0.64"/><circle cx="332" cy="161" r="5.77" fill="#527af1" opacity="0.63"/><circle cx="351" cy="161" r="5.73" fill="#577ef3" opacity="0.62"/><circle cx="370" cy="161" r="5.74" fill="#5e84f5" opacity="0.62"/><circle cx="389" cy="161" r="5.71" fill="#678cf6" opacity="0.62"/><circle cx="408" cy="161" r="5.56" fill="#7094f7" opacity="0.61"/><circle cx="427" cy="161" r="5.24" fill="#799bf8" opacity="0.57"/><circle cx="446" cy="161" r="4.73" fill="#83a3f9" opacity="0.52"/><circle cx="465" cy="161" r="4.07" fill="#8cabfa" opacity="0.46"/><circle cx="484" cy="161" r="3.36" fill="#95b2fb" opacity="0.39"/><circle cx="503" cy="161" r="2.68" fill="#9fbafc" opacity="0.32"/><circle cx="9" cy="180" r="2.80" fill="#203e98" opacity="0.33"/><circle cx="28" cy="180" r="3.48" fill="#2140a1" opacity="0.40"/><circle cx="47" cy="180" r="4.27" fill="#2242a9" opacity="0.48"/><circle cx="66" cy="180" r="5.15" fill="#2345b2" opacity="0.56"/><circle cx="85" cy="180" r="6.03" fill="#2447ba" opacity="0.65"/><circle cx="104" cy="180" r="6.84" fill="#2549c3" opacity="0.73"/><circle cx="123" cy="180" r="7.50" fill="#274ccb" opacity="0.80"/><circle cx="142" cy="180" r="7.94" fill="#284ed4" opacity="0.84"/><circle cx="161" cy="180" r="8.13" fill="#2951dc" opacity="0.86"/><circle cx="180" cy="180" r="8.08" fill="#2c54e1" opacity="0.86"/><circle cx="199" cy="180" r="7.84" fill="#3159e3" opacity="0.83"/><circle cx="218" cy="180" r="7.47" fill="#365ee5" opacity="0.80"/><circle cx="237" cy="180" r="7.06" fill="#3b63e7" opacity="0.76"/><circle cx="256" cy="180" r="6.68" fill="#4067e9" opacity="0.72"/><circle cx="275" cy="180" r="6.38" fill="#456ceb" opacity="0.69"/><circle cx="294" cy="180" r="6.18" fill="#4971ed" opacity="0.67"/><circle cx="313" cy="180" r="6.07" fill="#4e76ef" opacity="0.66"/><circle cx="332" cy="180" r="6.03" fill="#537af1" opacity="0.65"/><circle cx="351" cy="180" r="6.02" fill="#587ff3" opacity="0.65"/><circle cx="370" cy="180" r="5.97" fill="#5f85f5" opacity="0.65"/><circle cx="389" cy="180" r="5.84" fill="#688df6" opacity="0.63"/><circle cx="408" cy="180" r="5.56" fill="#7195f7" opacity="0.61"/><circle cx="427" cy="180" r="5.12" fill="#7b9cf8" opacity="0.56"/><circle cx="446" cy="180" r="4.52" fill="#84a4f9" opacity="0.50"/><circle cx="465" cy="180" r="3.84" fill="#8dacfa" opacity="0.43"/><circle cx="484" cy="180" r="3.14" fill="#97b3fb" opacity="0.36"/><circle cx="503" cy="180" r="2.51" fill="#a0bbfc" opacity="0.30"/><circle cx="9" cy="199" r="2.61" fill="#203e99" opacity="0.31"/><circle cx="28" cy="199" r="3.20" fill="#2140a2" opacity="0.37"/><circle cx="47" cy="199" r="3.91" fill="#2243aa" opacity="0.44"/><circle cx="66" cy="199" r="4.68" fill="#2345b3" opacity="0.52"/><circle cx="85" cy="199" r="5.46" fill="#2447bb" opacity="0.60"/><circle cx="104" cy="199" r="6.18" fill="#264ac4" opacity="0.67"/><circle cx="123" cy="199" r="6.76" fill="#274ccc" opacity="0.73"/><circle cx="142" cy="199" r="7.16" fill="#284fd5" opacity="0.77"/><circle cx="161" cy="199" r="7.34" fill="#2951dd" opacity="0.78"/><circle cx="180" cy="199" r="7.32" fill="#2d55e1" opacity="0.78"/><circle cx="199" cy="199" r="7.14" fill="#325ae3" opacity="0.76"/><circle cx="218" cy="199" r="6.89" fill="#375ee5" opacity="0.74"/><circle cx="237" cy="199" r="6.63" fill="#3c63e7" opacity="0.71"/><circle cx="256" cy="199" r="6.44" fill="#4068e9" opacity="0.69"/><circle cx="275" cy="199" r="6.35" fill="#456deb" opacity="0.68"/><circle cx="294" cy="199" r="6.35" fill="#4a71ed" opacity="0.69"/><circle cx="313" cy="199" r="6.42" fill="#4f76f0" opacity="0.69"/><circle cx="332" cy="199" r="6.48" fill="#547bf2" opacity="0.70"/><circle cx="351" cy="199" r="6.49" fill="#5980f4" opacity="0.70"/><circle cx="370" cy="199" r="6.37" fill="#6086f5" opacity="0.69"/><circle cx="389" cy="199" r="6.10" fill="#698ef6" opacity="0.66"/><circle cx="408" cy="199" r="5.66" fill="#7396f7" opacity="0.62"/><circle cx="427" cy="199" r="5.07" fill="#7c9df8" opacity="0.56"/><circle cx="446" cy="199" r="4.37" fill="#85a5f9" opacity="0.49"/><circle cx="465" cy="199" r="3.64" fill="#8fadfa" opacity="0.41"/><circle cx="484" cy="199" r="2.95" fill="#98b4fb" opacity="0.34"/><circle cx="503" cy="199" r="2.36" fill="#a1bcfc" opacity="0.29"/><circle cx="9" cy="218" r="2.34" fill="#203e9b" opacity="0.28"/><circle cx="28" cy="218" r="2.84" fill="#2141a3" opacity="0.33"/><circle cx="47" cy="218" r="3.42" fill="#2243ac" opacity="0.39"/><circle cx="66" cy="218" r="4.06" fill="#2345b4" opacity="0.46"/><circle cx="85" cy="218" r="4.70" fill="#2548bd" opacity="0.52"/><circle cx="104" cy="218" r="5.30" fill="#264ac5" opacity="0.58"/><circle cx="123" cy="218" r="5.79" fill="#274cce" opacity="0.63"/><circle cx="142" cy="218" r="6.14" fill="#284fd6" opacity="0.66"/><circle cx="161" cy="218" r="6.31" fill="#2951de" opacity="0.68"/><circle cx="180" cy="218" r="6.34" fill="#2e56e1" opacity="0.68"/><circle cx="199" cy="218" r="6.28" fill="#335ae3" opacity="0.68"/><circle cx="218" cy="218" r="6.18" fill="#375fe5" opacity="0.67"/><circle cx="237" cy="218" r="6.13" fill="#3c64e8" opacity="0.66"/><circle cx="256" cy="218" r="6.18" fill="#4169ea" opacity="0.67"/><circle cx="275" cy="218" r="6.33" fill="#466dec" opacity="0.68"/><circle cx="294" cy="218" r="6.56" fill="#4b72ee" opacity="0.71"/><circle cx="313" cy="218" r="6.81" fill="#5077f0" opacity="0.73"/><circle cx="332" cy="218" r="7.00" fill="#547cf2" opacity="0.75"/><circle cx="351" cy="218" r="7.03" fill="#5980f4" opacity="0.75"/><circle cx="370" cy="218" r="6.86" fill="#6187f5" opacity="0.74"/><circle cx="389" cy="218" r="6.47" fill="#6b8ff6" opacity="0.70"/><circle cx="408" cy="218" r="5.88" fill="#7497f7" opacity="0.64"/><circle cx="427" cy="218" r="5.14" fill="#7d9ef8" opacity="0.56"/><circle cx="446" cy="218" r="4.33" fill="#86a6f9" opacity="0.48"/><circle cx="465" cy="218" r="3.54" fill="#90aefa" opacity="0.40"/><circle cx="484" cy="218" r="2.83" fill="#99b5fb" opacity="0.33"/><circle cx="503" cy="218" r="2.25" fill="#a2bdfc" opacity="0.28"/><circle cx="9" cy="237" r="2.06" fill="#203f9c" opacity="0.26"/><circle cx="28" cy="237" r="2.44" fill="#2141a4" opacity="0.29"/><circle cx="47" cy="237" r="2.89" fill="#2243ad" opacity="0.34"/><circle cx="66" cy="237" r="3.39" fill="#2446b5" opacity="0.39"/><circle cx="85" cy="237" r="3.89" fill="#2548be" opacity="0.44"/><circle cx="104" cy="237" r="4.35" fill="#264ac6" opacity="0.49"/><circle cx="123" cy="237" r="4.75" fill="#274dcf" opacity="0.52"/><circle cx="142" cy="237" r="5.03" fill="#284fd7" opacity="0.55"/><circle cx="161" cy="237" r="5.21" fill="#2a52e0" opacity="0.57"/><circle cx="180" cy="237" r="5.29" fill="#2e56e2" opacity="0.58"/><circle cx="199" cy="237" r="5.34" fill="#335be4" opacity="0.58"/><circle cx="218" cy="237" r="5.41" fill="#3860e6" opacity="0.59"/><circle cx="237" cy="237" r="5.56" fill="#3d65e8" opacity="0.61"/><circle cx="256" cy="237" r="5.83" fill="#4269ea" opacity="0.63"/><circle cx="275" cy="237" r="6.22" fill="#476eec" opacity="0.67"/><circle cx="294" cy="237" r="6.66" fill="#4b73ee" opacity="0.72"/><circle cx="313" cy="237" r="7.09" fill="#5077f0" opacity="0.76"/><circle cx="332" cy="237" r="7.38" fill="#557cf2" opacity="0.79"/><circle cx="351" cy="237" r="7.45" fill="#5a81f4" opacity="0.79"/><circle cx="370" cy="237" r="7.25" fill="#6388f5" opacity="0.78"/><circle cx="389" cy="237" r="6.78" fill="#6c90f6" opacity="0.73"/><circle cx="408" cy="237" r="6.08" fill="#7598f7" opacity="0.66"/><circle cx="427" cy="237" r="5.23" fill="#7e9ff8" opacity="0.57"/><circle cx="446" cy="237" r="4.34" fill="#88a7f9" opacity="0.48"/><circle cx="465" cy="237" r="3.50" fill="#91affa" opacity="0.40"/><circle cx="484" cy="237" r="2.78" fill="#9ab6fb" opacity="0.33"/><circle cx="503" cy="237" r="2.20" fill="#a4befc" opacity="0.27"/><circle cx="9" cy="256" r="1.79" fill="#203f9d" opacity="0.23"/><circle cx="28" cy="256" r="2.07" fill="#2141a5" opacity="0.26"/><circle cx="47" cy="256" r="2.39" fill="#2344ae" opacity="0.29"/><circle cx="66" cy="256" r="2.75" fill="#2446b6" opacity="0.33"/><circle cx="85" cy="256" r="3.12" fill="#2548bf" opacity="0.36"/><circle cx="104" cy="256" r="3.46" fill="#264bc7" opacity="0.40"/><circle cx="123" cy="256" r="3.75" fill="#274dd0" opacity="0.43"/><circle cx="142" cy="256" r="3.98" fill="#284fd8" opacity="0.45"/><circle cx="161" cy="256" r="4.15" fill="#2a52e0" opacity="0.47"/><circle cx="180" cy="256" r="4.28" fill="#2f57e2" opacity="0.48"/><circle cx="199" cy="256" r="4.42" fill="#345ce4" opacity="0.49"/><circle cx="218" cy="256" r="4.62" fill="#3960e6" opacity="0.51"/><circle cx="237" cy="256" r="4.93" fill="#3e65e8" opacity="0.54"/><circle cx="256" cy="256" r="5.38" fill="#426aea" opacity="0.59"/><circle cx="275" cy="256" r="5.93" fill="#476fec" opacity="0.64"/><circle cx="294" cy="256" r="6.52" fill="#4c73ee" opacity="0.70"/><circle cx="313" cy="256" r="7.06" fill="#5178f0" opacity="0.76"/><circle cx="332" cy="256" r="7.43" fill="#567df2" opacity="0.79"/><circle cx="351" cy="256" r="7.55" fill="#5b82f5" opacity="0.80"/><circle cx="370" cy="256" r="7.35" fill="#6489f5" opacity="0.78"/><circle cx="389" cy="256" r="6.84" fill="#6d91f6" opacity="0.73"/><circle cx="408" cy="256" r="6.10" fill="#7699f7" opacity="0.66"/><circle cx="427" cy="256" r="5.21" fill="#80a0f8" opacity="0.57"/><circle cx="446" cy="256" r="4.30" fill="#89a8f9" opacity="0.48"/><circle cx="465" cy="256" r="3.44" fill="#92b0fa" opacity="0.39"/><circle cx="484" cy="256" r="2.72" fill="#9cb7fb" opacity="0.32"/><circle cx="503" cy="256" r="2.15" fill="#a5bffc" opacity="0.27"/><circle cx="9" cy="275" r="1.57" fill="#203f9e" opacity="0.21"/><circle cx="28" cy="275" r="1.75" fill="#2242a7" opacity="0.23"/><circle cx="47" cy="275" r="1.97" fill="#2344af" opacity="0.25"/><circle cx="66" cy="275" r="2.22" fill="#2446b7" opacity="0.27"/><circle cx="85" cy="275" r="2.47" fill="#2549c0" opacity="0.30"/><circle cx="104" cy="275" r="2.70" fill="#264bc8" opacity="0.32"/><circle cx="123" cy="275" r="2.91" fill="#274dd1" opacity="0.34"/><circle cx="142" cy="275" r="3.09" fill="#2950d9" opacity="0.36"/><circle cx="161" cy="275" r="3.24" fill="#2b53e0" opacity="0.37"/><circle cx="180" cy="275" r="3.39" fill="#3058e2" opacity="0.39"/><circle cx="199" cy="275" r="3.59" fill="#355ce4" opacity="0.41"/><circle cx="218" cy="275" r="3.87" fill="#3961e6" opacity="0.44"/><circle cx="237" cy="275" r="4.26" fill="#3e66e8" opacity="0.48"/><circle cx="256" cy="275" r="4.79" fill="#436bea" opacity="0.53"/><circle cx="275" cy="275" r="5.42" fill="#486fed" opacity="0.59"/><circle cx="294" cy="275" r="6.08" fill="#4d74ef" opacity="0.66"/><circle cx="313" cy="275" r="6.66" fill="#5279f1" opacity="0.72"/><circle cx="332" cy="275" r="7.07" fill="#567df3" opacity="0.76"/><circle cx="351" cy="275" r="7.20" fill="#5c83f5" opacity="0.77"/><circle cx="370" cy="275" r="7.02" fill="#658af6" opacity="0.75"/><circle cx="389" cy="275" r="6.54" fill="#6e92f7" opacity="0.70"/><circle cx="408" cy="275" r="5.82" fill="#789af8" opacity="0.63"/><circle cx="427" cy="275" r="4.97" fill="#81a1f9" opacity="0.55"/><circle cx="446" cy="275" r="4.10" fill="#8aa9fa" opacity="0.46"/><circle cx="465" cy="275" r="3.28" fill="#93b1fb" opacity="0.38"/><circle cx="484" cy="275" r="2.60" fill="#9db8fc" opacity="0.31"/><circle cx="503" cy="275" r="2.07" fill="#a6c0fd" opacity="0.26"/><circle cx="9" cy="294" r="1.40" fill="#21409f" opacity="0.19"/><circle cx="28" cy="294" r="1.51" fill="#2242a8" opacity="0.20"/><circle cx="47" cy="294" r="1.65" fill="#2344b0" opacity="0.22"/><circle cx="66" cy="294" r="1.81" fill="#2447b9" opacity="0.23"/><circle cx="85" cy="294" r="1.96" fill="#2549c1" opacity="0.25"/><circle cx="104" cy="294" r="2.12" fill="#264bca" opacity="0.26"/><circle cx="123" cy="294" r="2.26" fill="#284ed2" opacity="0.28"/><circle cx="142" cy="294" r="2.39" fill="#2950db" opacity="0.29"/><circle cx="161" cy="294" r="2.52" fill="#2c53e0" opacity="0.30"/><circle cx="180" cy="294" r="2.67" fill="#3058e2" opacity="0.32"/><circle cx="199" cy="294" r="2.88" fill="#355de5" opacity="0.34"/><circle cx="218" cy="294" r="3.18" fill="#3a62e7" opacity="0.37"/><circle cx="237" cy="294" r="3.59" fill="#3f66e9" opacity="0.41"/><circle cx="256" cy="294" r="4.12" fill="#446beb" opacity="0.46"/><circle cx="275" cy="294" r="4.73" fill="#4970ed" opacity="0.52"/><circle cx="294" cy="294" r="5.36" fill="#4d75ef" opacity="0.59"/><circle cx="313" cy="294" r="5.92" fill="#5279f1" opacity="0.64"/><circle cx="332" cy="294" r="6.31" fill="#577ef3" opacity="0.68"/><circle cx="351" cy="294" r="6.45" fill="#5d84f5" opacity="0.69"/><circle cx="370" cy="294" r="6.30" fill="#668bf6" opacity="0.68"/><circle cx="389" cy="294" r="5.88" fill="#7093f7" opacity="0.64"/><circle cx="408" cy="294" r="5.25" fill="#799bf8" opacity="0.57"/><circle cx="427" cy="294" r="4.49" fill="#82a2f9" opacity="0.50"/><circle cx="446" cy="294" r="3.72" fill="#8baafa" opacity="0.42"/><circle cx="465" cy="294" r="3.01" fill="#95b2fb" opacity="0.35"/><circle cx="484" cy="294" r="2.41" fill="#9ebafc" opacity="0.29"/><circle cx="503" cy="294" r="1.95" fill="#a7c1fd" opacity="0.24"/><circle cx="9" cy="313" r="1.27" fill="#2140a0" opacity="0.18"/><circle cx="28" cy="313" r="1.34" fill="#2242a9" opacity="0.18"/><circle cx="47" cy="313" r="1.43" fill="#2345b1" opacity="0.19"/><circle cx="66" cy="313" r="1.52" fill="#2447ba" opacity="0.20"/><circle cx="85" cy="313" r="1.61" fill="#2549c2" opacity="0.21"/><circle cx="104" cy="313" r="1.71" fill="#274ccb" opacity="0.22"/><circle cx="123" cy="313" r="1.80" fill="#284ed3" opacity="0.23"/><circle cx="142" cy="313" r="1.89" fill="#2950dc" opacity="0.24"/><circle cx="161" cy="313" r="1.99" fill="#2c54e1" opacity="0.25"/><circle cx="180" cy="313" r="2.12" fill="#3159e3" opacity="0.26"/><circle cx="199" cy="313" r="2.31" fill="#365ee5" opacity="0.28"/><circle cx="218" cy="313" r="2.58" fill="#3b62e7" opacity="0.31"/><circle cx="237" cy="313" r="2.95" fill="#3f67e9" opacity="0.34"/><circle cx="256" cy="313" r="3.41" fill="#446ceb" opacity="0.39"/><circle cx="275" cy="313" r="3.94" fill="#4971ed" opacity="0.44"/><circle cx="294" cy="313" r="4.48" fill="#4e75ef" opacity="0.50"/><circle cx="313" cy="313" r="4.96" fill="#537af1" opacity="0.55"/><circle cx="332" cy="313" r="5.29" fill="#587ff3" opacity="0.58"/><circle cx="351" cy="313" r="5.42" fill="#5e85f5" opacity="0.59"/><circle cx="370" cy="313" r="5.30" fill="#688cf6" opacity="0.58"/><circle cx="389" cy="313" r="4.96" fill="#7194f7" opacity="0.55"/><circle cx="408" cy="313" r="4.45" fill="#7a9cf8" opacity="0.50"/><circle cx="427" cy="313" r="3.84" fill="#83a3f9" opacity="0.43"/><circle cx="446" cy="313" r="3.22" fill="#8dabfa" opacity="0.37"/><circle cx="465" cy="313" r="2.64" fill="#96b3fb" opacity="0.31"/><circle cx="484" cy="313" r="2.16" fill="#9fbbfc" opacity="0.27"/><circle cx="503" cy="313" r="1.78" fill="#a9c2fd" opacity="0.23"/><circle cx="9" cy="332" r="1.20" fill="#2140a1" opacity="0.17"/><circle cx="28" cy="332" r="1.23" fill="#2243aa" opacity="0.17"/><circle cx="47" cy="332" r="1.28" fill="#2345b2" opacity="0.18"/><circle cx="66" cy="332" r="1.33" fill="#2447bb" opacity="0.18"/><circle cx="85" cy="332" r="1.38" fill="#264ac3" opacity="0.19"/><circle cx="104" cy="332" r="1.44" fill="#274ccc" opacity="0.19"/><circle cx="123" cy="332" r="1.50" fill="#284ed4" opacity="0.20"/><circle cx="142" cy="332" r="1.56" fill="#2951dd" opacity="0.21"/><circle cx="161" cy="332" r="1.63" fill="#2d55e1" opacity="0.21"/><circle cx="180" cy="332" r="1.73" fill="#3259e3" opacity="0.22"/><circle cx="199" cy="332" r="1.88" fill="#365ee5" opacity="0.24"/><circle cx="218" cy="332" r="2.10" fill="#3b63e7" opacity="0.26"/><circle cx="237" cy="332" r="2.39" fill="#4068e9" opacity="0.29"/><circle cx="256" cy="332" r="2.75" fill="#456ceb" opacity="0.32"/><circle cx="275" cy="332" r="3.16" fill="#4a71ed" opacity="0.37"/><circle cx="294" cy="332" r="3.58" fill="#4f76ef" opacity="0.41"/><circle cx="313" cy="332" r="3.95" fill="#537bf1" opacity="0.44"/><circle cx="332" cy="332" r="4.20" fill="#587ff4" opacity="0.47"/><circle cx="351" cy="332" r="4.30" fill="#6086f5" opacity="0.48"/><circle cx="370" cy="332" r="4.22" fill="#698df6" opacity="0.47"/><circle cx="389" cy="332" r="3.97" fill="#7295f7" opacity="0.45"/><circle cx="408" cy="332" r="3.59" fill="#7b9df8" opacity="0.41"/><circle cx="427" cy="332" r="3.14" fill="#85a5f9" opacity="0.36"/><circle cx="446" cy="332" r="2.67" fill="#8eacfa" opacity="0.32"/><circle cx="465" cy="332" r="2.24" fill="#97b4fb" opacity="0.27"/><circle cx="484" cy="332" r="1.88" fill="#a1bcfc" opacity="0.24"/><circle cx="503" cy="332" r="1.61" fill="#aac3fd" opacity="0.21"/><circle cx="9" cy="351" r="1.15" fill="#2140a3" opacity="0.16"/><circle cx="28" cy="351" r="1.17" fill="#2243ab" opacity="0.17"/><circle cx="47" cy="351" r="1.19" fill="#2345b4" opacity="0.17"/><circle cx="66" cy="351" r="1.22" fill="#2548bc" opacity="0.17"/><circle cx="85" cy="351" r="1.25" fill="#264ac5" opacity="0.17"/><circle cx="104" cy="351" r="1.28" fill="#274ccd" opacity="0.18"/><circle cx="123" cy="351" r="1.31" fill="#284fd5" opacity="0.18"/><circle cx="142" cy="351" r="1.35" fill="#2951de" opacity="0.18"/><circle cx="161" cy="351" r="1.40" fill="#2d55e1" opacity="0.19"/><circle cx="180" cy="351" r="1.47" fill="#325ae3" opacity="0.20"/><circle cx="199" cy="351" r="1.58" fill="#375fe5" opacity="0.21"/><circle cx="218" cy="351" r="1.73" fill="#3c64e7" opacity="0.22"/><circle cx="237" cy="351" r="1.94" fill="#4168e9" opacity="0.24"/><circle cx="256" cy="351" r="2.19" fill="#466dec" opacity="0.27"/><circle cx="275" cy="351" r="2.48" fill="#4a72ee" opacity="0.30"/><circle cx="294" cy="351" r="2.77" fill="#4f77f0" opacity="0.33"/><circle cx="313" cy="351" r="3.03" fill="#547bf2" opacity="0.35"/><circle cx="332" cy="351" r="3.21" fill="#5980f4" opacity="0.37"/><circle cx="351" cy="351" r="3.28" fill="#6187f5" opacity="0.38"/><circle cx="370" cy="351" r="3.23" fill="#6a8ef6" opacity="0.37"/><circle cx="389" cy="351" r="3.06" fill="#7396f7" opacity="0.36"/><circle cx="408" cy="351" r="2.80" fill="#7d9ef8" opacity="0.33"/><circle cx="427" cy="351" r="2.49" fill="#86a6f9" opacity="0.30"/><circle cx="446" cy="351" r="2.17" fill="#8fadfa" opacity="0.27"/><circle cx="465" cy="351" r="1.88" fill="#98b5fb" opacity="0.24"/><circle cx="484" cy="351" r="1.64" fill="#a2bdfc" opacity="0.21"/><circle cx="503" cy="351" r="1.45" fill="#abc4fd" opacity="0.19"/><circle cx="9" cy="370" r="1.12" fill="#2141a4" opacity="0.16"/><circle cx="28" cy="370" r="1.13" fill="#2243ac" opacity="0.16"/><circle cx="47" cy="370" r="1.14" fill="#2446b5" opacity="0.16"/><circle cx="66" cy="370" r="1.16" fill="#2548bd" opacity="0.17"/><circle cx="85" cy="370" r="1.17" fill="#264ac6" opacity="0.17"/><circle cx="104" cy="370" r="1.19" fill="#274dce" opacity="0.17"/><circle cx="123" cy="370" r="1.21" fill="#284fd7" opacity="0.17"/><circle cx="142" cy="370" r="1.23" fill="#2951df" opacity="0.17"/><circle cx="161" cy="370" r="1.26" fill="#2e56e1" opacity="0.18"/><circle cx="180" cy="370" r="1.30" fill="#335be4" opacity="0.18"/><circle cx="199" cy="370" r="1.37" fill="#385fe6" opacity="0.19"/><circle cx="218" cy="370" r="1.47" fill="#3d64e8" opacity="0.20"/><circle cx="237" cy="370" r="1.61" fill="#4169ea" opacity="0.21"/><circle cx="256" cy="370" r="1.77" fill="#466eec" opacity="0.23"/><circle cx="275" cy="370" r="1.95" fill="#4b72ee" opacity="0.25"/><circle cx="294" cy="370" r="2.14" fill="#5077f0" opacity="0.26"/><circle cx="313" cy="370" r="2.30" fill="#557cf2" opacity="0.28"/><circle cx="332" cy="370" r="2.42" fill="#5a81f4" opacity="0.29"/><circle cx="351" cy="370" r="2.46" fill="#6288f5" opacity="0.30"/><circle cx="370" cy="370" r="2.43" fill="#6b8ff6" opacity="0.29"/><circle cx="389" cy="370" r="2.33" fill="#7597f7" opacity="0.28"/><circle cx="408" cy="370" r="2.16" fill="#7e9ff8" opacity="0.27"/><circle cx="427" cy="370" r="1.97" fill="#87a7f9" opacity="0.25"/><circle cx="446" cy="370" r="1.77" fill="#90aefa" opacity="0.23"/><circle cx="465" cy="370" r="1.59" fill="#9ab6fb" opacity="0.21"/><circle cx="484" cy="370" r="1.44" fill="#a3befc" opacity="0.19"/><circle cx="503" cy="370" r="1.32" fill="#acc5fd" opacity="0.18"/><circle cx="9" cy="389" r="1.11" fill="#2141a5" opacity="0.16"/><circle cx="28" cy="389" r="1.12" fill="#2344ad" opacity="0.16"/><circle cx="47" cy="389" r="1.12" fill="#2446b6" opacity="0.16"/><circle cx="66" cy="389" r="1.13" fill="#2548be" opacity="0.16"/><circle cx="85" cy="389" r="1.13" fill="#264bc7" opacity="0.16"/><circle cx="104" cy="389" r="1.14" fill="#274dcf" opacity="0.16"/><circle cx="123" cy="389" r="1.15" fill="#284fd8" opacity="0.16"/><circle cx="142" cy="389" r="1.16" fill="#2a52e0" opacity="0.17"/><circle cx="161" cy="389" r="1.18" fill="#2f57e2" opacity="0.17"/><circle cx="180" cy="389" r="1.21" fill="#345be4" opacity="0.17"/><circle cx="199" cy="389" r="1.25" fill="#3860e6" opacity="0.17"/><circle cx="218" cy="389" r="1.30" fill="#3d65e8" opacity="0.18"/><circle cx="237" cy="389" r="1.38" fill="#426aea" opacity="0.19"/><circle cx="256" cy="389" r="1.48" fill="#476eec" opacity="0.20"/><circle cx="275" cy="389" r="1.59" fill="#4c73ee" opacity="0.21"/><circle cx="294" cy="389" r="1.69" fill="#5178f0" opacity="0.22"/><circle cx="313" cy="389" r="1.79" fill="#557df2" opacity="0.23"/><circle cx="332" cy="389" r="1.85" fill="#5a81f4" opacity="0.24"/><circle cx="351" cy="389" r="1.88" fill="#6389f5" opacity="0.24"/><circle cx="370" cy="389" r="1.86" fill="#6d91f6" opacity="0.24"/><circle cx="389" cy="389" r="1.80" fill="#7698f7" opacity="0.23"/><circle cx="408" cy="389" r="1.71" fill="#7fa0f8" opacity="0.22"/><circle cx="427" cy="389" r="1.60" fill="#88a8f9" opacity="0.21"/><circle cx="446" cy="389" r="1.49" fill="#92affa" opacity="0.20"/><circle cx="465" cy="389" r="1.38" fill="#9bb7fb" opacity="0.19"/><circle cx="484" cy="389" r="1.29" fill="#a4bffc" opacity="0.18"/><circle cx="503" cy="389" r="1.22" fill="#aec6fd" opacity="0.17"/><circle cx="9" cy="408" r="1.10" fill="#2141a6" opacity="0.16"/><circle cx="28" cy="408" r="1.11" fill="#2344ae" opacity="0.16"/><circle cx="47" cy="408" r="1.11" fill="#2446b7" opacity="0.16"/><circle cx="66" cy="408" r="1.11" fill="#2549bf" opacity="0.16"/><circle cx="85" cy="408" r="1.11" fill="#264bc8" opacity="0.16"/><circle cx="104" cy="408" r="1.12" fill="#274dd0" opacity="0.16"/><circle cx="123" cy="408" r="1.12" fill="#2950d9" opacity="0.16"/><circle cx="142" cy="408" r="1.13" fill="#2b53e0" opacity="0.16"/><circle cx="161" cy="408" r="1.14" fill="#2f57e2" opacity="0.16"/><circle cx="180" cy="408" r="1.15" fill="#345ce4" opacity="0.17"/><circle cx="199" cy="408" r="1.17" fill="#3961e6" opacity="0.17"/><circle cx="218" cy="408" r="1.20" fill="#3e65e8" opacity="0.17"/><circle cx="237" cy="408" r="1.25" fill="#436aea" opacity="0.17"/><circle cx="256" cy="408" r="1.30" fill="#486fec" opacity="0.18"/><circle cx="275" cy="408" r="1.35" fill="#4c74ee" opacity="0.19"/><circle cx="294" cy="408" r="1.41" fill="#5178f1" opacity="0.19"/><circle cx="313" cy="408" r="1.46" fill="#567df3" opacity="0.20"/><circle cx="332" cy="408" r="1.50" fill="#5b82f5" opacity="0.20"/><circle cx="351" cy="408" r="1.51" fill="#658af6" opacity="0.20"/><circle cx="370" cy="408" r="1.50" fill="#6e92f7" opacity="0.20"/><circle cx="389" cy="408" r="1.47" fill="#7799f8" opacity="0.20"/><circle cx="408" cy="408" r="1.42" fill="#80a1f9" opacity="0.19"/><circle cx="427" cy="408" r="1.36" fill="#8aa9fa" opacity="0.19"/><circle cx="446" cy="408" r="1.30" fill="#93b0fb" opacity="0.18"/><circle cx="465" cy="408" r="1.25" fill="#9cb8fb" opacity="0.17"/><circle cx="484" cy="408" r="1.20" fill="#a5c0fc" opacity="0.17"/><circle cx="503" cy="408" r="1.17" fill="#afc7fd" opacity="0.17"/><circle cx="9" cy="427" r="1.10" fill="#2242a7" opacity="0.16"/><circle cx="28" cy="427" r="1.10" fill="#2344b0" opacity="0.16"/><circle cx="47" cy="427" r="1.10" fill="#2447b8" opacity="0.16"/><circle cx="66" cy="427" r="1.10" fill="#2549c1" opacity="0.16"/><circle cx="85" cy="427" r="1.11" fill="#264bc9" opacity="0.16"/><circle cx="104" cy="427" r="1.11" fill="#284ed2" opacity="0.16"/><circle cx="123" cy="427" r="1.11" fill="#2950da" opacity="0.16"/><circle cx="142" cy="427" r="1.11" fill="#2b53e0" opacity="0.16"/><circle cx="161" cy="427" r="1.12" fill="#3058e2" opacity="0.16"/><circle cx="180" cy="427" r="1.12" fill="#355de4" opacity="0.16"/><circle cx="199" cy="427" r="1.13" fill="#3a61e6" opacity="0.16"/><circle cx="218" cy="427" r="1.15" fill="#3f66e9" opacity="0.16"/><circle cx="237" cy="427" r="1.17" fill="#436beb" opacity="0.17"/><circle cx="256" cy="427" r="1.19" fill="#4870ed" opacity="0.17"/><circle cx="275" cy="427" r="1.22" fill="#4d74ef" opacity="0.17"/><circle cx="294" cy="427" r="1.25" fill="#5279f1" opacity="0.17"/><circle cx="313" cy="427" r="1.27" fill="#577ef3" opacity="0.18"/><circle cx="332" cy="427" r="1.29" fill="#5d83f5" opacity="0.18"/><circle cx="351" cy="427" r="1.30" fill="#668bf6" opacity="0.18"/><circle cx="370" cy="427" r="1.29" fill="#6f93f7" opacity="0.18"/><circle cx="389" cy="427" r="1.28" fill="#789af8" opacity="0.18"/><circle cx="408" cy="427" r="1.26" fill="#82a2f9" opacity="0.18"/><circle cx="427" cy="427" r="1.23" fill="#8baafa" opacity="0.17"/><circle cx="446" cy="427" r="1.20" fill="#94b1fb" opacity="0.17"/><circle cx="465" cy="427" r="1.17" fill="#9db9fc" opacity="0.17"/><circle cx="484" cy="427" r="1.15" fill="#a7c1fd" opacity="0.16"/><circle cx="503" cy="427" r="1.13" fill="#b0c8fe" opacity="0.16"/></svg><figcaption class="hero__cap">Sampling the light field</figcaption></figure>
+</div></div></section>
 
-		<!--[if IE 8]>
-	    	<script src="assets/js/selectivizr.js"></script>
-	    <![endif]-->
-	</head>
-	
-	<body>
-		<div id="drawer-right">
-			<div class="cross text-right">
-				<a class="toggleDrawer" href="#"><i class="fa fa-times-circle fa-2x"></i></a>
-			</div>
-			<h2>Navigate</h2>
-			<nav>
-				<ul class="nav nav-pills nav-stacked">
-					<li>
-						<a href="#wrapper"><i class="fa fa-home"></i> Home</a>
-					</li>
-					<li>
-						<a href="#portfolio"><i class="fa fa-bookmark"></i> Portfolio</a>
-					</li>
-					<li>
-						<a href="#services"><i class="fa fa-tasks"></i> Services</a>
-					</li>
-					<li>
-						<a href="#blog"><i class="fa fa-wordpress"></i> Blog</a>
-					</li>
-					<li>
-						<a href="#parallax"><i class="fa fa-heart"></i> Parallax</a>
-					</li>
-					<li>
-						<a href="#testimonials"><i class="fa fa-thumbs-up"></i> Testimonials</a>
-					</li>
-					<li>
-						<a href="#contact"><i class="fa fa-phone-square"></i> Contact</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="social">
-				<h2>Stay Connected</h2>
-				<ul>
-					<li><a href=""><i class="fa fa-facebook-square fa-3x"></i></a></li>
-					<li><a href=""><i class="fa fa-twitter-square fa-3x"></i></a></li>
-					<li><a href=""><i class="fa fa-tumblr-square fa-3x"></i></a></li>
-					<li><a href=""><i class="fa fa-google-plus-square fa-3x"></i></a></li>
-				</ul>
-			</div>
-		</div><!-- #drawer-right -->
+<section class="stats"><div class="wrap"><div class="stats__grid">
+  <div class="stat"><div class="stat__num">140<span class="u">+</span></div><div class="stat__label">Peer-Reviewed Papers</div></div>
+  <div class="stat"><div class="stat__num">10</div><div class="stat__label">PhD Scholars Graduated</div></div>
+  <div class="stat"><div class="stat__num">6</div><div class="stat__label">Patents &amp; Applications</div></div>
+  <div class="stat"><div class="stat__num">6</div><div class="stat__label">Research Directions</div></div>
+</div></div></section>
 
-		<div id="wrapper">
-			
-			<div id="header" class="content-block header-wrapper">
-				<div class="header-wrapper-inner">
-					<section class="top clearfix">
-						<div class="pull-left">
-							<h1><a class="logo" href="index.html"> 
-								<!-- <img src="assets/images/cviglogo.png" style="width:8%; height:8%;"/> -->
-								CVIG
-							</a></h1>
-						</div>
-						<div class="pull-right">
-							<a class="toggleDrawer" href="#"><i class="fa fa-bars fa-2x"></i></a>
-						</div>
-					</section>
-					<section class="center">
-						<div class="slogan">
-							Computer Vision, Imaging and Graphics Laboratory
-						</div>
-						<!-- <div class="secondary-slogan">
-							The Flusk Theme By ThemeWagon.
-						</div> -->
-					</section>
-					<section class="bottom">
-						<a id="scrollToContent" href="#">
-							<img src="assets/images/arrow_down.png">
-						</a>
-					</section>
-				</div>
-			</div><!-- header -->
+<section class="section" id="about"><div class="wrap"><div class="about__grid">
+  <div class="about__body">
+    <p class="eyebrow">About the lab</p>
+    <p>The CVIG Lab studies how images are formed, and how to invert that process to recover the scenes behind them. Our work spans the classical toolkit of geometry and light and the modern toolkit of deep learning &mdash; often solving the same problem twice to understand where each approach wins.</p>
+    <p>Based jointly in the Departments of Electrical Engineering and Computer Science &amp; Engineering at IIT Gandhinagar, the group publishes across the leading venues in vision, graphics, and imaging, and holds patents on image fusion and 3D understanding.</p>
+  </div>
+  <aside class="pi-card">
+    <div class="pi-card__top"><span class="avatar">SR</span>
+      <div><div class="pi-card__name">Shanmuganathan Raman</div><div class="pi-card__role">Principal Investigator</div></div></div>
+    <ul class="pi-card__list">
+      <li>Dr Vilas Mujumdar Chair, IIT Gandhinagar</li><li>Professor &amp; Head, CSE, IIT Gandhinagar</li>
+      <li>Professor, Electrical Engineering</li>
+      <li>PhD, IIT Bombay (2011) &middot; Microsoft Research India Fellow</li>
+    </ul>
+    <div class="pi-card__links">
+      <a href="https://scholar.google.co.in/citations?user=3YWptB8AAAAJ" target="_blank" rel="noopener noreferrer">Scholar &#8599;</a>
+      <a href="https://orcid.org/0000-0003-2718-7891" target="_blank" rel="noopener noreferrer">ORCID &#8599;</a>
+      <a href="../index.html">Full profile &#8599;</a>
+    </div>
+  </aside>
+</div></div></section>
 
-			
-			<div class="content-block" id="portfolio">
-				<div class="container">
-					<header class="block-heading cleafix">
-						<a href="#" class="btn btn-o btn-lg pull-right">View All</a>
-						<h1>Our Latest Works</h1>
-						<p>Take a look at some of our recent products</p>
-					</header>
-					<section class="block-body">
-						<div class="row">
-							<div class="col-sm-4">
-								<a href="#" class="recent-work" style="background-image:url(assets/images/rain_1-320x240.jpg)">
-									<span class="btn btn-o-white">Lorem Rocks</span>
-								</a>
-							</div>
-							<div class="col-sm-4">
-								<a href="#" class="recent-work" style="background-image:url(assets/images/min_icons_thumb1-320x240.jpg)">
-									<span class="btn btn-o-white">Lorem Rocks</span>
-								</a>
-							</div>
-							<div class="col-sm-4">
-								<a href="#" class="recent-work" style="background-image:url(assets/images/flat_icons_thumb.jpg)">
-									<span class="btn btn-o-white">Lorem Rocks</span>
-								</a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-4">
-								<a href="#" class="recent-work" style="background-image:url(assets/images/wood-320x240.jpg)">
-									<span class="btn btn-o-white">Lorem Rocks</span>
-								</a>
-							</div>
-							<div class="col-sm-4">
-								<a href="#" class="recent-work" style="background-image:url(assets/images/bike-320x240.jpg)">
-									<span class="btn btn-o-white">Lorem Rocks</span>
-								</a>
-							</div>
-							<div class="col-sm-4">
-								<a href="#" class="recent-work" style="background-image:url(assets/images/six_1-320x240.jpg)">
-									<span class="btn btn-o-white">Lorem Rocks</span>
-								</a>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div><!-- #portfolio -->
+<section class="section section--tint" id="research"><div class="wrap">
+  <div class="section-head"><p class="eyebrow">What we work on</p>
+    <h2>Six directions, one pipeline</h2>
+    <p>From forming an image to inverting it &mdash; our research runs the length of the imaging pipeline, classical methods first, learned methods second.</p></div>
+  <div class="area-grid"><article class="area"><span class="area__idx">01</span><span class="area__dot"></span><h3>Computational Photography &amp; HDR</h3><p>Reconstructing high-dynamic-range scenes from ordinary cameras &mdash; tone mapping, multi-exposure fusion, and HDR video.</p></article><article class="area"><span class="area__idx">02</span><span class="area__dot"></span><h3>Photometric Stereo &amp; Inverse Rendering</h3><p>Recovering shape, reflectance, and lighting from images through photometric stereo, polarization, and inverse scattering.</p></article><article class="area"><span class="area__idx">03</span><span class="area__dot"></span><h3>3D, Point Clouds &amp; Neural Rendering</h3><p>Learning geometry from points and views &mdash; point-cloud completion, mesh processing, and neural radiance fields.</p></article><article class="area"><span class="area__idx">04</span><span class="area__dot"></span><h3>Differentiable Rendering &amp; Visual Art</h3><p>Turning rendering into an optimization target &mdash; shadow art, anamorphic sculpture, and scribble-guided design.</p></article><article class="area"><span class="area__idx">05</span><span class="area__dot"></span><h3>Saliency, Symmetry &amp; Retargeting</h3><p>Reading image structure &mdash; symmetry detection, saliency estimation, and content-aware retargeting.</p></article><article class="area"><span class="area__idx">06</span><span class="area__dot"></span><h3>Learning, Restoration &amp; Generative Vision</h3><p>Deep models for real tasks &mdash; image restoration, inpainting, EEG decoding, and generative image and video.</p></article></div>
+</div></section>
 
-			<div class="content-block parallax" id="services">
-				<div class="container text-center">
-					<header class="block-heading cleafix">
-						<h1>Our Services</h1>
-						<p>A little about what we do</p>
-					</header>
-					<section class="block-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="service">
-									<i class="fa fa-send-o"></i>
-									<h2>Illustration</h2>
-									<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="service">
-									<i class="fa fa-heart-o"></i>
-									<h2>3D Modeling</h2>
-									<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="service">
-									<i class="fa fa-camera-retro"></i>
-									<h2>Photography</h2>
-									<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div><!-- #services -->
+<section class="section" id="work"><div class="wrap">
+  <div class="section-head"><p class="eyebrow">Selected work</p><h2>Recent publications</h2>
+    <p>A snapshot of recent papers across the group&rsquo;s directions. The full record spans 140+ peer-reviewed papers.</p></div>
+  <div class="pub-list"><div class="pub"><div class="pub__venue"><b>IEEE/CVF WACV</b><span>2027</span></div><div><div class="pub__title"><a href="https://wacv.thecvf.com/Conferences/2027/index.html" target="_blank" rel="noopener noreferrer">GOT-PCD: Geometry-Guided Optimal Transport for Point Cloud Denoising</a></div><div class="pub__authors">Seema Kumari, Sayak Dutta, and Shanmuganathan Raman</div></div><a class="pub__link" href="https://wacv.thecvf.com/Conferences/2027/index.html" target="_blank" rel="noopener noreferrer">Paper &#8599;</a></div><div class="pub"><div class="pub__venue"><b>BMVC</b><span>2026</span></div><div><div class="pub__title"><a href="https://bmvc2026.bmva.org/" target="_blank" rel="noopener noreferrer">Why Multi-Source Audio Fails to Compose: A Geometric Diagnosis and Its Remedy</a></div><div class="pub__authors">Anurag Singh, Prajwal Singh, and Shanmuganathan Raman</div></div><a class="pub__link" href="https://bmvc2026.bmva.org/" target="_blank" rel="noopener noreferrer">Paper &#8599;</a></div><div class="pub"><div class="pub__venue"><b>IEEE/CVF WACV</b><span>2026</span></div><div><div class="pub__title"><a href="https://openaccess.thecvf.com/content/WACV2026/papers/Singh_Synthesizing_Compositional_Videos_from_Text_Description_WACV_2026_paper.pdf" target="_blank" rel="noopener noreferrer">Synthesizing Compositional Videos from Text Description</a></div><div class="pub__authors">Prajwal Singh, Kuldeep Kulkarni, Shanmuganathan Raman, and Harsh Rangwani</div></div><a class="pub__link" href="https://openaccess.thecvf.com/content/WACV2026/papers/Singh_Synthesizing_Compositional_Videos_from_Text_Description_WACV_2026_paper.pdf" target="_blank" rel="noopener noreferrer">Paper &#8599;</a></div><div class="pub"><div class="pub__venue"><b>IEEE/CVF CVPR</b><span>2025</span></div><div><div class="pub__title"><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Debnath_RASP_Revisiting_3D_Anamorphic_Art_for_Shadow-Guided_Packing_of_Irregular_CVPR_2025_paper.pdf" target="_blank" rel="noopener noreferrer">RASP: Revisiting 3D Anamorphic Art for Shadow-Guided Packing of Irregular Objects</a></div><div class="pub__authors">Soumyaratna Debnath, Ashish Tiwari, Kaustubh Sadekar, Shanmuganathan Raman</div></div><a class="pub__link" href="https://openaccess.thecvf.com/content/CVPR2025/papers/Debnath_RASP_Revisiting_3D_Anamorphic_Art_for_Shadow-Guided_Packing_of_Irregular_CVPR_2025_paper.pdf" target="_blank" rel="noopener noreferrer">Paper &#8599;</a></div><div class="pub"><div class="pub__venue"><b>Computer Graphics Forum</b><span>2025</span></div><div><div class="pub__title"><a href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.70242" target="_blank" rel="noopener noreferrer">TensoIS: A Step Towards Feed-Forward Tensorial Inverse Scattering for Perlin Distributed Heterogeneous Media</a></div><div class="pub__authors">Ashish Tiwari, Satyam Bhardwaj, Yash Bachwana, Parag Sarvoday Sahu, T. M. Feroz Ali, Bhargava Chintalapati, and Shanmuganathan Raman</div></div><a class="pub__link" href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.70242" target="_blank" rel="noopener noreferrer">Paper &#8599;</a></div><div class="pub"><div class="pub__venue"><b>SIGGRAPH Asia</b><span>2024</span></div><div><div class="pub__title"><a href="https://soumyaratnadebnath.github.io/ScribGen/" target="_blank" rel="noopener noreferrer">ScribGen: Generating Scribble Art Through Metaheuristics</a></div><div class="pub__authors">Soumyaratna Debnath, Ashish Tiwari, and Shanmuganathan Raman</div></div><a class="pub__link" href="https://soumyaratnadebnath.github.io/ScribGen/" target="_blank" rel="noopener noreferrer">Paper &#8599;</a></div><div class="pub"><div class="pub__venue"><b>ECCV</b><span>2024</span></div><div><div class="pub__title"><a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/01894.pdf" target="_blank" rel="noopener noreferrer">MERLiN: Single-Shot Material Estimation and ReLighting for Photometric Stereo</a></div><div class="pub__authors">Ashish Tiwari, Satoshi Ikehata, and Shanmuganathan Raman</div></div><a class="pub__link" href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/01894.pdf" target="_blank" rel="noopener noreferrer">Paper &#8599;</a></div><div class="pub"><div class="pub__venue"><b>IEEE/CVF WACV</b><span>2022</span></div><div><div class="pub__title"><a href="https://kaustubh-sadekar.github.io/ShadowArt-Revisited/" target="_blank" rel="noopener noreferrer">Shadow Art Revisited: A Differentiable Rendering Based Approach</a></div><div class="pub__authors">Kaustubh Sadekar, Ashish Tiwari, and Shanmuganathan Raman</div></div><a class="pub__link" href="https://kaustubh-sadekar.github.io/ShadowArt-Revisited/" target="_blank" rel="noopener noreferrer">Paper &#8599;</a></div></div>
+  <div class="pub-more">
+    <a class="btn btn--dark" href="publications.html">All publications &amp; patents</a>
+    <span class="pub-note">2 U.S. patents &middot; 4 Indian patent applications</span>
+  </div>
+</div></section>
 
+<section class="section section--tint" id="people"><div class="wrap"><div class="section-head"><p class="eyebrow">The group</p><h2>People</h2></div><div class="people__pi"><span class="avatar">SR</span><div><h3>Prof. Shanmuganathan Raman</h3><p>Principal Investigator &middot; Dr Vilas Mujumdar Chair &middot; Professor &amp; Head, CSE &middot; Professor, EE, IIT Gandhinagar</p></div></div><p class="subhead">Current Members</p><div class="member-grid"><div class="member"><span class="avatar">AA</span><span>Akbar Ali</span></div><div class="member"><span class="avatar">AS</span><span>Anupam Sharma</span></div><div class="member"><span class="avatar">AB</span><span>Arjun Badola</span></div><div class="member"><span class="avatar">DH</span><span>Dikshit Hegde</span></div><div class="member"><span class="avatar">AG</span><span>Ashutosh Gupta</span></div><div class="member"><span class="avatar">ST</span><span>Saurabh Tripathi</span></div><div class="member"><span class="avatar">AG</span><span>Ankur Garg</span></div><div class="member"><span class="avatar">PM</span><span>Pramod Mishra</span></div><div class="member"><span class="avatar">RS</span><span>Rohit Sinha</span></div><div class="member"><span class="avatar">PT</span><span>Prateek Takshak</span></div><div class="member"><span class="avatar">JD</span><span>John Debbarma</span></div><div class="member"><span class="avatar">DK</span><span>Deepanjali Kumari</span></div><div class="member"><span class="avatar">PA</span><span>Pankaj</span></div><div class="member"><span class="avatar">SK</span><span>Sinngam Khaidem</span></div><div class="member"><span class="avatar">AD</span><span>Arka Dutta</span></div><div class="member"><span class="avatar">HM</span><span>Hement Shekhar Mohanty</span></div><div class="member"><span class="avatar">AM</span><span>Akhil Maan</span></div><div class="member"><span class="avatar">AM</span><span>Arpit Metrey</span></div><div class="member"><span class="avatar">JP</span><span>Jiya Parmar</span></div><div class="member"><span class="avatar">MK</span><span>Malla Jeevan Kumar</span></div><div class="member"><span class="avatar">MK</span><span>Mohit Kumar</span></div><div class="member"><span class="avatar">RK</span><span>Rakesh Kumar</span></div><div class="member"><span class="avatar">AJ</span><span>Anvesh Jadhav</span></div><div class="member"><span class="avatar">AJ</span><span>Arnav Jagtap</span></div><div class="member"><span class="avatar">KM</span><span>Kancheti Aparna Mala</span></div><div class="member"><span class="avatar">AV</span><span>Amisha Vaghela</span></div></div><div class="pub-more"><a class="btn btn--dark" href="people.html">Meet all 26 members &#8599;</a></div></div></section>
 
-			<div class="content-block" id="blog">
-				<div class="container">
-					<header class="block-heading cleafix">
-						<a href="#" class="btn btn-o btn-lg pull-right">View All</a>
-						<h1>From the Blog</h1>
-						<p>Keep up with the latest happenings.</p>
-					</header>
-					<section class="block-body">
-						<div class="row">
-							<div class="col-sm-4 blog-post">
-								<img src="assets/images/bike_water1-1000x600.jpg">
-								<a href="#"><h2>Design Your Mind</h2></a>
-								<div class="date">3 Nov, 2014</div>
-								<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-								<a href="">Read More</a>
-							</div>
-							<div class="col-sm-4 blog-post">
-								<img src="assets/images/mac_glasses1-1000x600.jpg">
-								<a href="#"><h2>Winter Is Comming</h2></a>
-								<div class="date">3 Nov, 2014</div>
-								<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-								<a href="">Read More</a>
-							</div>
-							<div class="col-sm-4 blog-post">
-								<img src="assets/images/road-1000x600.jpg">
-								<a href="#"><h2>The Illustration</h2></a>
-								<div class="date">3 Nov, 2014</div>
-								<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-								<a href="">Read More</a>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div><!-- #blog -->
+<section class="section" id="news"><div class="wrap">
+  <div class="section-head"><p class="eyebrow">Latest</p><h2>News</h2></div>
+  <div class="news-list"><div class="news"><div class="news__date">Sep 2026</div><div class="news__body">Arjun Badola and Dikshit Hegde win the Qualcomm Innovation Fellowship India 2026.</div></div><div class="news"><div class="news__date">Jun 2026</div><div class="news__body">Dikshit Hegde is awarded the IndiaAI PhD Fellowship.</div></div><div class="news"><div class="news__date">May 2026</div><div class="news__body">Prajwal Singh defends his PhD thesis, <em>Scalable Generative Vision and Neural Decoding</em>.</div></div><div class="news"><div class="news__date">Apr 2026</div><div class="news__body">Seema Kumari defends her PhD thesis on the restoration and analysis of 3D point clouds.</div></div><div class="news"><div class="news__date">2026</div><div class="news__body">Lab papers accepted at IEEE ICIP 2026, ICASSP 2026, ISBI 2026, and WACV 2026.</div></div><div class="news"><div class="news__date">Dec 2025</div><div class="news__body">Ashish Tiwari defends his PhD thesis and joins Dolby Laboratories.</div></div><div class="news"><div class="news__date">Sep 2025</div><div class="news__body">Prof. Raman takes charge as Head of the Department of Computer Science &amp; Engineering, IIT Gandhinagar.</div></div></div>
+</div></section>
 
+<section class="section section--tint" id="teaching"><div class="wrap">
+  <div class="section-head"><p class="eyebrow">In the classroom</p><h2>Teaching</h2></div>
+  <div class="teach">
+    <span class="teach__code">ES&nbsp;666</span>
+    <div><h3>Computer Vision</h3><p>A graduate course spanning classical and learning-based vision &mdash; image formation and geometry through CNNs, transformers, and generative models.</p></div>
+    <a class="btn btn--dark" href="../es666.html">Course site &#8599;</a>
+  </div>
+</div></section>
 
-			<div class="content-block parallax" id="parallax">
-				<div class="container text-center">
-					<h1>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit.</h1>
-					<a href="" class="btn btn-o-white btn-lg">Get a free quote</a>
-				</div>
-			</div><!-- #parallax -->
+<section class="join" id="join"><div class="wrap"><div class="join__grid">
+  <div>
+    <p class="eyebrow">Work with us</p>
+    <h2>Join the lab</h2>
+    <p>We look for curious students who like both the mathematics of vision and the craft of building systems. Prospective students can apply through IIT Gandhinagar&rsquo;s internship and doctoral programmes.</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="https://sites.iitgn.ac.in/srip/" target="_blank" rel="noopener noreferrer">SRIP internships</a>
+      <a class="btn btn--ghost" href="https://www.iitgn.ac.in/admission.htm" target="_blank" rel="noopener noreferrer">PhD admissions</a>
+    </div>
+  </div>
+  <dl class="contact">
+    <dt>Lab</dt><dd>Academic Block 13, Rooms 313 &amp; 318<br>IIT Gandhinagar, Palaj, Gujarat &ndash; 382355</dd>
+    <dt>Email</dt><dd><a href="mailto:shanmuga@iitgn.ac.in">shanmuga@iitgn.ac.in</a></dd>
+    <dt>Departments</dt><dd><a href="https://ee.iitgn.ac.in/site/" target="_blank" rel="noopener noreferrer">Electrical Engineering</a> &amp; <a href="https://cs.iitgn.ac.in/" target="_blank" rel="noopener noreferrer">Computer Science &amp; Engineering</a> &#8599;</dd>
+  </dl>
+</div></div></section>
+</main>
 
-			<div class="content-block" id="testimonials">
-				<div class="container">
-					<header class="block-heading cleafix">
-						<h1>Testimonials</h1>
-						<p>Some happy customers have to say.</p>
-					</header>
-					<section class="block-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="testimonial">
-									<img src="assets/images/testimonial_31-190x190.jpg">
-									<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-									<strong>Jhon Doe</strong><br/>
-									<span>Head of Ideas, Technext</span>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="testimonial">
-									<img src="assets/images/testimonial_11-190x190.jpg">
-									<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-									<strong>Jane Doe</strong><br/>
-									<span>CEO, Apple Inc</span>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="testimonial">
-									<img src="assets/images/testimonial_22-190x190.jpg">
-									<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-									<strong>Albert Doe</strong><br/>
-									<span>Team Lead, Design Studio</span>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div><!-- /#testimonials -->
-
-
-			<div class="content-block" id="contact">
-				<div class="container text-center">
-					<header class="block-heading cleafix">
-						<h1>Contact Us</h1>
-						<p>Feel free to drop us a line.</p>
-					</header>
-					<section class="block-body">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3">
-								<form class="" role="form">
-									<div class="form-group">
-								    	<input type="email" class="form-control form-control-white" id="subject" placeholder="Your Name" required>
-								  	</div>
-								    <div class="form-group">
-								    	<input type="email" class="form-control form-control-white" id="exampleInputEmail2" placeholder="Enter email" required>
-								    </div>
-								    <div class="form-group">
-								    	<textarea class="form-control form-control-white" placeholder="Write Something" required></textarea>
-								    </div>
-								  <input type="submit" class="btn btn-o-white" value="Say Hello">
-								</form>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div><!-- #contact -->
-
-			<div class="content-block" id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-6">&copy; Copyright Flusk 2014</div>
-						<div class="col-xs-6 text-right">Theme by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></div>
-					</div>
-				</div>
-			</div><!-- #footer -->
-
-
-		</div><!--/#wrapper-->
-
-
-
-
-		<script src="assets/js/jquery-2.1.3.min.js"></script>
-		<script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/jquery.actual.min.js"></script>
-		<script src="assets/js/jquery.scrollTo.min.js"></script>
-		<script src="assets/js/script.js"></script>
-
-	</body>
+<footer class="footer"><div class="wrap footer__inner">
+  <span>&copy; 2026 CVIG Lab &middot; IIT Gandhinagar</span>
+  <span>Computer Vision &middot; Imaging &middot; Graphics</span>
+</div></footer>
+</body>
 </html>
