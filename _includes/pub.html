@@ -1,0 +1,29 @@
+{%- assign p = include.pub -%}
+{%- assign uid = include.prefix | append: p.id -%}
+<li class="pub" id="{{ uid }}">
+  {% include media.html image=p.image label=p.short %}
+  <div>
+    {%- assign main = p.links.project | default: p.links.paper -%}
+    <h3 class="pub__title">{% if main %}<a href="{{ main }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
+    <p class="pub__authors">{% include md.html text=p.authors %}</p>
+    <div class="pub__meta"><span class="venue">{{ p.venue }}</span><span>{{ p.venue_full }}</span></div>
+    <div class="pub__actions">
+      {%- assign kinds = "project:Project Page,paper:Paper,code:Code,video:Video,slides:Slides" | split: "," -%}
+      {%- for k in kinds -%}
+        {%- assign kv = k | split: ":" -%}
+        {%- assign href = p.links[kv[0]] -%}
+        {%- if href %}
+      <a class="act" href="{{ href }}" target="_blank" rel="noopener">{{ kv[1] }}</a>
+        {%- elsif kv[0] == 'paper' or kv[0] == 'code' %}
+      <a class="act" aria-disabled="true">{{ kv[1] }}</a>
+        {%- endif -%}
+      {%- endfor %}
+      {%- if p.bibtex %}
+      <button class="act" type="button" data-bib="bib-{{ uid }}">BibTeX</button>
+      {%- endif %}
+    </div>
+  </div>
+  {%- if p.bibtex %}
+  <div class="bibtex" id="bib-{{ uid }}" hidden><pre>{{ p.bibtex | strip | escape }}</pre></div>
+  {%- endif %}
+</li>

@@ -1,325 +1,119 @@
-<!DOCTYPE html>
-<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="en-US"><![endif]-->
-<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="en-US">	<![endif]-->
-<!--[if IE 9]><html class="ie ie9 lte9" lang="en-US"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html class="noIE" lang="en-US">
-<!--<![endif]-->
-	<head>
-		<title>CVIG Lab</title>
+---
+layout: default
+title: Computer Vision, Imaging & Graphics Laboratory
+hero3d: true
+cloud3d: true
+---
+{%- assign pubs = site.data.publications -%}
+{%- assign people = site.data.people -%}
 
-		<!-- meta -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
-		
-		<!-- google fonts -->
-		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans'>
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold"/>
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alegreya+Sans:regular,italic,bold,bolditalic"/>
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nixie+One:regular,italic,bold,bolditalic"/>
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alegreya+SC:regular,italic,bold,bolditalic"/>
-		
-		<!-- css -->
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-		<link rel="stylesheet" href="assets/css/style.css" media="screen"/>
+<section class="masthead"><div class="wrap masthead__grid">
+  <div>
+    <p class="kicker">{{ site.institute }}, Departments of CSE and EE</p>
+    <h1>{{ site.long_title }}</h1>
+    <p class="masthead__lede">We study how images are formed, and how to invert that process to recover the shape, material and light of the scenes behind them.</p>
+    <dl class="facts">
+      {%- for f in site.data.site.facts %}
+      <div><dt>{{ f.label }}</dt><dd>{{ f.value }}{% if f.note %}<span>{{ f.note }}</span>{% endif %}</dd></div>
+      {%- endfor %}
+    </dl>
+  </div>
+  <figure class="hero3d" data-label="Interactive render: 3D CVIG letters casting shadows as a light circles them">
+    <div class="hero3d__stage"><img class="hero3d__fallback" src="{{ '/assets/images/hero-cvig.jpg' | relative_url }}" alt=""></div>
+    <figcaption><span class="hero3d__hint">Hover or drag to steer the light. </span>Light, shadow and shape: the problems at the centre of the lab's work.</figcaption>
+  </figure>
+</div></section>
 
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-			<script src="assets/js/html5shiv.js"></script>
-			<script src="assets/js/respond.js"></script>
-		<![endif]-->
+<section class="highlights" aria-labelledby="hl-title"><div class="wrap">
+  <div class="highlights__head"><h2 id="hl-title">Research highlights</h2><a href="{{ '/publications.html' | relative_url }}">All publications</a></div>
+  <div class="strip" data-reveal>
+    {%- for p in pubs %}{% if p.highlight %}
+    {%- assign main = p.links.project | default: p.links.paper %}
+    <article class="teaser">
+      <a class="teaser__fig" href="{{ main | default: '#' }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">{% include media.html image=p.image label=p.short %}</a>
+      <div class="tags"><span class="venue">{{ p.venue }}</span></div>
+      <h3 class="teaser__title">{% if main %}<a href="{{ main }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
+      <p class="teaser__desc">{{ p.summary }}</p>
+    </article>
+    {%- endif %}{% endfor %}
+  </div>
+</div></section>
 
-		<!--[if IE 8]>
-	    	<script src="assets/js/selectivizr.js"></script>
-	    <![endif]-->
-	</head>
-	
-	<body>
-		<div id="drawer-right">
-			<div class="cross text-right">
-				<a class="toggleDrawer" href="#"><i class="fa fa-times-circle fa-2x"></i></a>
-			</div>
-			<h2>Navigate</h2>
-			<nav>
-				<ul class="nav nav-pills nav-stacked">
-					<li>
-						<a href="#wrapper"><i class="fa fa-home"></i> Home</a>
-					</li>
-					<li>
-						<a href="#portfolio"><i class="fa fa-bookmark"></i> Portfolio</a>
-					</li>
-					<li>
-						<a href="#services"><i class="fa fa-tasks"></i> Services</a>
-					</li>
-					<li>
-						<a href="#blog"><i class="fa fa-wordpress"></i> Blog</a>
-					</li>
-					<li>
-						<a href="#parallax"><i class="fa fa-heart"></i> Parallax</a>
-					</li>
-					<li>
-						<a href="#testimonials"><i class="fa fa-thumbs-up"></i> Testimonials</a>
-					</li>
-					<li>
-						<a href="#contact"><i class="fa fa-phone-square"></i> Contact</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="social">
-				<h2>Stay Connected</h2>
-				<ul>
-					<li><a href=""><i class="fa fa-facebook-square fa-3x"></i></a></li>
-					<li><a href=""><i class="fa fa-twitter-square fa-3x"></i></a></li>
-					<li><a href=""><i class="fa fa-tumblr-square fa-3x"></i></a></li>
-					<li><a href=""><i class="fa fa-google-plus-square fa-3x"></i></a></li>
-				</ul>
-			</div>
-		</div><!-- #drawer-right -->
+<section class="section section--alt" id="research" aria-labelledby="research-title"><div class="wrap">
+  <div class="research-intro">
+    <div>
+      <h2 id="research-title" class="h-section">Research areas</h2>
+      <p>Six threads that run the length of the imaging pipeline: capturing light, inverting it into shape and material, and rendering it back.</p>
+    </div>
+    <figure class="cloud3d" data-label="Animated point cloud morphing from a noisy partial scan to complete shapes">
+      <div class="cloud3d__stage"></div>
+      <figcaption><span class="cloud3d__state">Noisy partial scan</span></figcaption>
+    </figure>
+  </div>
+  <ul class="area-grid" data-reveal>
+    {%- for a in site.data.research %}
+    <li class="area">
+      {% include media.html image=a.image label=a.title class="media--wide" %}
+      <h3>{{ a.title }}</h3>
+      <p>{{ a.text }}</p>
+    </li>
+    {%- endfor %}
+  </ul>
+</div></section>
 
-		<div id="wrapper">
-			
-			<div id="header" class="content-block header-wrapper">
-				<div class="header-wrapper-inner">
-					<section class="top clearfix">
-						<div class="pull-left">
-							<h1><a class="logo" href="index.html"> 
-								<!-- <img src="assets/images/cviglogo.png" style="width:8%; height:8%;"/> -->
-								CVIG
-							</a></h1>
-						</div>
-						<div class="pull-right">
-							<a class="toggleDrawer" href="#"><i class="fa fa-bars fa-2x"></i></a>
-						</div>
-					</section>
-					<section class="center">
-						<div class="slogan">
-							Computer Vision, Imaging and Graphics Laboratory
-						</div>
-						<!-- <div class="secondary-slogan">
-							The Flusk Theme By ThemeWagon.
-						</div> -->
-					</section>
-					<section class="bottom">
-						<a id="scrollToContent" href="#">
-							<img src="assets/images/arrow_down.png">
-						</a>
-					</section>
-				</div>
-			</div><!-- header -->
+<section class="section" id="publications" aria-labelledby="pub-title"><div class="wrap">
+  <div class="section-head"><h2 id="pub-title">Selected publications</h2><a class="section-head__more" href="{{ '/publications.html' | relative_url }}">All publications and BibTeX</a></div>
+  <ul class="pubgrid" data-reveal>
+    {%- for p in pubs %}{% if p.selected %}
+    {%- assign main = p.links.project | default: p.links.paper %}
+    <li>
+      {% include media.html image=p.image label=p.short class="media--wide" %}
+      <span class="venue">{{ p.venue }}</span>
+      <h3>{% if main %}<a href="{{ main }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
+    </li>
+    {%- endif %}{% endfor %}
+  </ul>
+</div></section>
 
-			
-			<div class="content-block" id="portfolio">
-				<div class="container">
-					<header class="block-heading cleafix">
-						<a href="#" class="btn btn-o btn-lg pull-right">View All</a>
-						<h1>Our Latest Works</h1>
-						<p>Take a look at some of our recent products</p>
-					</header>
-					<section class="block-body">
-						<div class="row">
-							<div class="col-sm-4">
-								<a href="#" class="recent-work" style="background-image:url(assets/images/rain_1-320x240.jpg)">
-									<span class="btn btn-o-white">Lorem Rocks</span>
-								</a>
-							</div>
-							<div class="col-sm-4">
-								<a href="#" class="recent-work" style="background-image:url(assets/images/min_icons_thumb1-320x240.jpg)">
-									<span class="btn btn-o-white">Lorem Rocks</span>
-								</a>
-							</div>
-							<div class="col-sm-4">
-								<a href="#" class="recent-work" style="background-image:url(assets/images/flat_icons_thumb.jpg)">
-									<span class="btn btn-o-white">Lorem Rocks</span>
-								</a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-4">
-								<a href="#" class="recent-work" style="background-image:url(assets/images/wood-320x240.jpg)">
-									<span class="btn btn-o-white">Lorem Rocks</span>
-								</a>
-							</div>
-							<div class="col-sm-4">
-								<a href="#" class="recent-work" style="background-image:url(assets/images/bike-320x240.jpg)">
-									<span class="btn btn-o-white">Lorem Rocks</span>
-								</a>
-							</div>
-							<div class="col-sm-4">
-								<a href="#" class="recent-work" style="background-image:url(assets/images/six_1-320x240.jpg)">
-									<span class="btn btn-o-white">Lorem Rocks</span>
-								</a>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div><!-- #portfolio -->
+<section class="section section--alt" id="news" aria-labelledby="news-title"><div class="wrap two-col">
+  <div>
+    <div class="section-head"><h2 id="news-title">News</h2></div>
+    {% include news.html limit=8 %}
+  </div>
+  <aside class="peek" aria-labelledby="people-title">
+    <h2 id="people-title">People</h2>
+    {%- assign phd = people.groups | where: "title", "Ph.D. Scholars" | first -%}
+    {%- assign ms = people.groups | where: "title", "Master's & Undergraduate Researchers" | first -%}
+    <div class="person">
+      <figure class="photo"><img src="{{ '/assets/people/' | append: people.pi.photo | relative_url }}" alt="{{ people.pi.name }}" loading="lazy"></figure>
+      <div><h3 class="person__name">{{ people.pi.name }}</h3><p class="person__meta">Principal Investigator</p></div>
+    </div>
+    <p class="peek__count"><b>{{ phd.members.size }}</b> PhD scholars, <b>{{ ms.members.size }}</b> master's and undergraduate researchers, and <b>{{ people.alumni.size }}</b> PhD alumni.</p>
+    <a class="btn btn--line" href="{{ '/people.html' | relative_url }}">Meet the group</a>
+  </aside>
+</div></section>
 
-			<div class="content-block parallax" id="services">
-				<div class="container text-center">
-					<header class="block-heading cleafix">
-						<h1>Our Services</h1>
-						<p>A little about what we do</p>
-					</header>
-					<section class="block-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="service">
-									<i class="fa fa-send-o"></i>
-									<h2>Illustration</h2>
-									<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="service">
-									<i class="fa fa-heart-o"></i>
-									<h2>3D Modeling</h2>
-									<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="service">
-									<i class="fa fa-camera-retro"></i>
-									<h2>Photography</h2>
-									<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div><!-- #services -->
+<section class="section" id="contact" aria-labelledby="contact-title"><div class="wrap">
+  <div class="section-head"><h2 id="contact-title">Teaching, joining and contact</h2></div>
+  {%- for c in site.data.site.courses %}
+  <div class="course">
+    <span class="mono">{{ c.code }}</span>
+    <div><h3>{{ c.title }}</h3><p>{{ c.text }}</p></div>
+    <a href="{{ c.url }}">Course site</a>
+  </div>
+  {%- endfor %}
+  <p class="prose join-text">{{ site.data.site.join.text }}</p>
+  <div class="btn-row">
+    {%- for l in site.data.site.join.links %}
+    <a class="btn{% unless forloop.first %} btn--line{% endunless %}" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>
+    {%- endfor %}
+  </div>
+  <dl class="contact">
+    <div><dt>Lab address</dt><dd>{{ site.address }}</dd></div>
+    <div><dt>Email</dt><dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd></div>
+    <div><dt>Departments</dt><dd>{% for d in site.data.site.departments %}<a href="{{ d.url }}" target="_blank" rel="noopener">{{ d.label }}</a>{% unless forloop.last %}<br>{% endunless %}{% endfor %}</dd></div>
+  </dl>
+</div></section>
 
-
-			<div class="content-block" id="blog">
-				<div class="container">
-					<header class="block-heading cleafix">
-						<a href="#" class="btn btn-o btn-lg pull-right">View All</a>
-						<h1>From the Blog</h1>
-						<p>Keep up with the latest happenings.</p>
-					</header>
-					<section class="block-body">
-						<div class="row">
-							<div class="col-sm-4 blog-post">
-								<img src="assets/images/bike_water1-1000x600.jpg">
-								<a href="#"><h2>Design Your Mind</h2></a>
-								<div class="date">3 Nov, 2014</div>
-								<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-								<a href="">Read More</a>
-							</div>
-							<div class="col-sm-4 blog-post">
-								<img src="assets/images/mac_glasses1-1000x600.jpg">
-								<a href="#"><h2>Winter Is Comming</h2></a>
-								<div class="date">3 Nov, 2014</div>
-								<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-								<a href="">Read More</a>
-							</div>
-							<div class="col-sm-4 blog-post">
-								<img src="assets/images/road-1000x600.jpg">
-								<a href="#"><h2>The Illustration</h2></a>
-								<div class="date">3 Nov, 2014</div>
-								<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-								<a href="">Read More</a>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div><!-- #blog -->
-
-
-			<div class="content-block parallax" id="parallax">
-				<div class="container text-center">
-					<h1>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit.</h1>
-					<a href="" class="btn btn-o-white btn-lg">Get a free quote</a>
-				</div>
-			</div><!-- #parallax -->
-
-			<div class="content-block" id="testimonials">
-				<div class="container">
-					<header class="block-heading cleafix">
-						<h1>Testimonials</h1>
-						<p>Some happy customers have to say.</p>
-					</header>
-					<section class="block-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="testimonial">
-									<img src="assets/images/testimonial_31-190x190.jpg">
-									<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-									<strong>Jhon Doe</strong><br/>
-									<span>Head of Ideas, Technext</span>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="testimonial">
-									<img src="assets/images/testimonial_11-190x190.jpg">
-									<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-									<strong>Jane Doe</strong><br/>
-									<span>CEO, Apple Inc</span>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="testimonial">
-									<img src="assets/images/testimonial_22-190x190.jpg">
-									<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-									<strong>Albert Doe</strong><br/>
-									<span>Team Lead, Design Studio</span>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div><!-- /#testimonials -->
-
-
-			<div class="content-block" id="contact">
-				<div class="container text-center">
-					<header class="block-heading cleafix">
-						<h1>Contact Us</h1>
-						<p>Feel free to drop us a line.</p>
-					</header>
-					<section class="block-body">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3">
-								<form class="" role="form">
-									<div class="form-group">
-								    	<input type="email" class="form-control form-control-white" id="subject" placeholder="Your Name" required>
-								  	</div>
-								    <div class="form-group">
-								    	<input type="email" class="form-control form-control-white" id="exampleInputEmail2" placeholder="Enter email" required>
-								    </div>
-								    <div class="form-group">
-								    	<textarea class="form-control form-control-white" placeholder="Write Something" required></textarea>
-								    </div>
-								  <input type="submit" class="btn btn-o-white" value="Say Hello">
-								</form>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div><!-- #contact -->
-
-			<div class="content-block" id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-6">&copy; Copyright Flusk 2014</div>
-						<div class="col-xs-6 text-right">Theme by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></div>
-					</div>
-				</div>
-			</div><!-- #footer -->
-
-
-		</div><!--/#wrapper-->
-
-
-
-
-		<script src="assets/js/jquery-2.1.3.min.js"></script>
-		<script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/jquery.actual.min.js"></script>
-		<script src="assets/js/jquery.scrollTo.min.js"></script>
-		<script src="assets/js/script.js"></script>
-
-	</body>
-</html>
+<script type="module" src="{{ '/assets/js/hero3d.js' | relative_url }}"></script>
+<script type="module" src="{{ '/assets/js/cloud3d.js' | relative_url }}"></script>

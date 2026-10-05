@@ -1,0 +1,16 @@
+{%- comment -%} News feed. Param: limit {%- endcomment -%}
+{%- assign items = site.data.news | sort: 'date' | reverse -%}
+{%- assign labels = "award:Award,defense:Defense,paper:Paper accepted,service:Service,talk:Talk,event:Event" | split: "," -%}
+<ol class="news">
+{%- for n in items limit: include.limit %}
+  {%- assign tagname = n.tag -%}
+  {%- for l in labels -%}{%- assign lv = l | split: ":" -%}{%- if lv[0] == n.tag -%}{%- assign tagname = lv[1] -%}{%- endif -%}{%- endfor %}
+  <li{% if n.featured %} class="is-featured"{% endif %}>
+    <time datetime="{{ n.date | date: '%Y-%m' }}">{% if n.date_label %}{{ n.date_label }}{% else %}{{ n.date | date: '%b %Y' }}{% endif %}</time>
+    <div class="news__body">
+      <p>{% if n.tag %}<span class="tag tag--{{ n.tag }}">{{ tagname }}</span>{% endif %}{% include md.html text=n.text %}</p>
+      {%- if n.image %}<img class="news__img" src="{{ '/assets/teasers/' | append: n.image | relative_url }}" alt="" loading="lazy">{% endif %}
+    </div>
+  </li>
+{%- endfor %}
+</ol>

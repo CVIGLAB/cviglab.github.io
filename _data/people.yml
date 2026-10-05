@@ -1,0 +1,146 @@
+# People. Edit freely; order here is the order on the site.
+# Member fields:
+#   name, role (e.g. "PhD, CSE, since 2023"), topic (optional one-liner),
+#   photo: file in assets/people/ (4:5 portrait; omit for a silhouette),
+#   fellowships: [..] (highlighted tags), affiliations: [..] (plain tags),
+#   links: { scholar: URL, github: URL, website: URL, linkedin: URL }  (all optional)
+
+pi:
+  name: Prof. Shanmuganathan Raman
+  photo: shanmuganathan-raman.jpg
+  role: Principal Investigator, Departments of Computer Science & Engineering and Electrical Engineering, IIT Gandhinagar
+  titles:
+    - Dr Vilas Mujumdar Chair, IIT Gandhinagar
+    - Professor & Head, Computer Science & Engineering
+    - Professor, Electrical Engineering
+    - PhD, IIT Bombay (2011); Microsoft Research India Fellow
+  links:
+    scholar: https://scholar.google.co.in/citations?user=3YWptB8AAAAJ
+    orcid: https://orcid.org/0000-0003-2718-7891
+    email: shanmuga@iitgn.ac.in
+
+groups:
+  - title: Postdoctoral Fellows & Visiting Researchers
+    empty: No postdoctoral or visiting researchers are listed at present. Enquiries to shanmuga@iitgn.ac.in.
+    members:
+      - name: "Dr. Prajwal Singh"
+        role: "Post-Doctoral Fellow, IIT Gandhinagar; PhD, CSE, 2021–2026"
+        topic: "Generative vision and neural decoding"
+        fellowships: ["PMRF Scholar"]
+      - name: "Dr. Seema Kumari"
+        role: "Post-Doctoral Fellow, IIT Gandhinagar; PhD, EE, 2020–2026"
+        topic: "Restoration and analysis of 3D point clouds"
+
+  - title: Ph.D. Scholars
+    members:
+      - name: "Akbar Ali"
+        role: "PhD, CSE, since 2023"
+        fellowships: ["Visvesvaraya Fellow"]
+      - name: "Anupam Sharma"
+        role: "PhD, CSE, since 2024"
+        topic: "EEG representation learning"
+        fellowships: ["Director’s Fellow"]
+      - name: "Arjun Badola"
+        role: "PhD, AI, since 2024"
+        fellowships: ["Visvesvaraya Fellow", "Qualcomm Innovation Fellow"]
+      - name: "Dikshit Hegde"
+        role: "PhD, CSE, since 2025"
+        fellowships: ["IndiaAI PhD Fellow", "Qualcomm Innovation Fellow"]
+      - name: "Ashutosh Gupta"
+        role: "PhD, AI, since 2024"
+        topic: "Image despeckling"
+        affiliations: ["IITGN–SAC"]
+      - name: "Saurabh Tripathi"
+        role: "PhD, AI, since 2024"
+        affiliations: ["IITGN–SAC"]
+      - name: "Ankur Garg"
+        role: "PhD, EE, since 2025"
+        fellowships: ["Vigyan Yuva – Shanti Swarup Bhatnagar Prize"]
+        affiliations: ["IITGN–SAC"]
+      - name: "Pramod Mishra"
+        role: "PhD, EE, since 2025"
+        affiliations: ["IITGN–SAC"]
+      - name: "Rohit Sinha"
+        role: "PhD, AI"
+
+  - title: Master's & Undergraduate Researchers
+    compact: true
+    members:
+      - name: "Prateek Takshak"
+        role: "Dual Degree, CSE"
+      - name: "John Debbarma"
+        role: "Dual Degree, CSE"
+      - name: "Deepanjali Kumari"
+        role: "Dual Degree, CSE"
+      - name: "Pankaj"
+        role: "Dual Degree, CSE"
+      - name: "Sinngam Khaidem"
+        role: "M.Tech, CSE"
+      - name: "Arka Dutta"
+        role: "M.Tech, AI"
+      - name: "Hement Shekhar Mohanty"
+        role: "M.Tech, AI"
+      - name: "Akhil Maan"
+        role: "M.Tech, AI"
+      - name: "Arpit Metrey"
+        role: "M.Tech, CSE/AI"
+      - name: "Jiya Parmar"
+        role: "M.Tech, CSE/AI"
+      - name: "Malla Jeevan Kumar"
+        role: "M.Tech, CSE/AI"
+      - name: "Mohit Kumar"
+        role: "M.Tech, CSE/AI"
+      - name: "Rakesh Kumar"
+        role: "M.Tech, CSE/AI"
+      - name: "Anvesh Jadhav"
+        role: "Dual Degree, EE"
+      - name: "Arnav Jagtap"
+        role: "Dual Degree, EE"
+      - name: "Kancheti Aparna Mala"
+        role: "M.Tech, EE"
+      - name: "Amisha Vaghela"
+        role: "M.Tech, EE"
+
+# PhD alumni (newest first), from the team page at shanmugaiit.github.io/team.html.
+# `now` = current position (optional).
+alumni:
+  - name: Dr. Prajwal Singh
+    degree: PhD, CSE, 2021–2026 (defended 6 May 2026)
+    work: "*Scalable Generative Vision and Neural Decoding: Connecting Machine and Human Perception*"
+    now: Post-Doctoral Fellow, IIT Gandhinagar
+  - name: Dr. Seema Kumari
+    degree: PhD, EE, 2020–2026 (defended 21 Apr 2026)
+    work: "*Restoration and Analysis of 3D Point Clouds: Algorithms and Applications*"
+    now: Post-Doctoral Fellow, IIT Gandhinagar
+  - name: Dr. Ashish Tiwari
+    degree: PhD, EE, 2020–2025 (defended 5 Dec 2025)
+    work: "*Neural 3D Reconstruction and Understanding via Photometric Cues: Shading, Polarization, and Shadows*"
+    now: Dolby Laboratories
+  - name: Dr. Shashikant Verma
+    degree: PhD, EE, 2020–2025 (defended 28 Jul 2025)
+    work: "*Towards Realistic 3D Digital Humans and Multi-Species Motion Understanding*"
+    now: NPDF, IIT Bombay
+  - name: Dr. Aalok Gangopadhyay
+    degree: PhD, EE, 2017–2023 (defended 8 Jun 2023)
+    work: "*Deep Learning based Representation, Processing and Inverse Rendering of Curves and Surfaces*"
+    now: Visiting Fellow, TIFR Mumbai
+  - name: Dr. Indra Deep Mastan
+    degree: PhD, CSE, 2015–2021 (defended 21 Apr 2021)
+    work: "*Deep Feature Learning: Training with No Prior Examples and its Applications*"
+    now: Assistant Professor, CSE, IIT BHU
+  - name: Dr. Gagan Kanojia
+    degree: PhD, EE, 2015–2020 (defended 26 Oct 2020)
+    work: "*Investigating Motion in Image Sequences: Detection, Removal, and Inference*"
+    now: Senior Research Engineer, Samsung Research Institute
+  - name: Dr. Sudhakar Kumawat
+    degree: PhD, CSE, 2014–2020 (defended 16 Sep 2020)
+    work: "*Challenges in Deep Visual Recognition: Algorithms and Novel Architectures*"
+    now: Assistant Professor, IIT (ISM) Dhanbad
+  - name: Dr. Diptiben Patel
+    degree: PhD, EE, 2014–2020 (defended 6 Jan 2020)
+    work: "*Novel Strategies for Image Retargeting: Energy Design, Acceleration, and Scene Awareness*"
+    now: Sensor Fusion Engineer, Qualcomm US
+  - name: Dr. Rajendra Nagar
+    degree: PhD, EE, 2014–2019 (defended 20 May 2019)
+    work: "*Multidimensional Reflection Symmetry: Theory, Algorithms, and Applications*"
+    now: Assistant Professor, EE, IIT Jodhpur

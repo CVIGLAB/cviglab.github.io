@@ -1,0 +1,58 @@
+# Small bits of home-page content.
+facts:
+  - label: Led by
+    value: Prof. Shanmuganathan Raman
+    note: Dr Vilas Mujumdar Chair, Professor and Head of CSE
+  - label: Est.
+    value: "2013"
+  - label: Record
+    value: 140+ papers, 6 patents filed
+
+courses:
+  - code: ES 666
+    title: Computer Vision
+    text: Classical and learning-based vision, from image formation to generative models.
+    url: ../es666.html
+
+join:
+  text: Join through IIT Gandhinagar's Summer Research Internship Programme (SRIP) or its doctoral admissions.
+  links:
+    - label: SRIP internships
+      url: https://sites.iitgn.ac.in/srip/
+    - label: PhD admissions
+      url: https://www.iitgn.ac.in/admission.htm
+
+departments:
+  - label: Electrical Engineering
+    url: https://ee.iitgn.ac.in/site/
+  - label: Computer Science & Engineering
+    url: https://cs.iitgn.ac.in/
+
+# Patents, newest first. One list; `url` optional.
+patents:
+  - number: 202621061994 A
+    year: 2026
+    title: System for Packing Irregular 3D Objects and Estimating a Minimum Container Dimension
+    inventors: Palak Gupta, **Shanmuganathan Raman**; applicant IIT Gandhinagar
+  - number: 202621059788 A
+    year: 2026
+    title: Channel-Agnostic Representation Learning from Electroencephalogram (EEG) Signals
+    inventors: "**Anupam Sharma**, **Prajwal Singh**, **Shanmuganathan Raman**, Krishna Prasad Miyapuram; applicant IIT Gandhinagar"
+  - number: 202621058351 A
+    year: 2026
+    title: Self-Supervised 3D Point Cloud Completion
+    inventors: "**Seema Kumari**, Preyum Kumar, Srimanta Mandal, **Shanmuganathan Raman**; applicant IIT Gandhinagar"
+  - number: 202621057754 A
+    year: 2026
+    title: Incremental Multi-Scene Neural Radiance Field Representation
+    inventors: "**Prajwal Singh**, **Ashish Tiwari**, Gautam Vashishtha, **Shanmuganathan Raman**; applicant IIT Gandhinagar"
+  - number: US 8,805,111 B2
+    year: 2014
+    title: System and Method for Fusing Images
+    url: https://patents.google.com/patent/US8805111B2/en   # verified 2026-10: filed 2010-02-09, issued 2014-08-12
+    inventors: Subhasis Chaudhuri, Ketan Kotwal, **Shanmuganathan Raman**; assignee IIT Bombay
+  - number: US 8,884,989 B2
+    year: 2014
+    title: System and Method for Fusing Images
+    url: https://patents.google.com/patent/US8884989B2/en   # verified 2026-10: filed 2010-02-10, issued 2014-11-11
+    inventors: Subhasis Chaudhuri, Ketan Kotwal, **Shanmuganathan Raman**; assignee IIT Bombay

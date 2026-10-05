@@ -1,0 +1,19 @@
+# Research areas on the home page. `image` = file in assets/teasers/ (blank = colour-chart placeholder).
+- title: Computational Photography & HDR
+  text: High-dynamic-range imaging from ordinary cameras; tone mapping and exposure fusion.
+  image:
+- title: Photometric Stereo & Inverse Rendering
+  text: Shape, reflectance and light from images, polarization and scattering.
+  image: merlin.jpg
+- title: 3D, Point Clouds & Neural Rendering
+  text: Point-cloud completion, meshes and neural radiance fields.
+  image: continual-ngp.jpg
+- title: Differentiable Rendering & Visual Art
+  text: Shadow art, anamorphic sculpture and scribble art as optimisation problems.
+  image: shadowart.jpg
+- title: Saliency, Symmetry & Retargeting
+  text: Symmetry detection, saliency and content-aware retargeting.
+  image:
+- title: Learning, Restoration & Generative Vision
+  text: Restoration, inpainting, EEG decoding and generative video.
+  image: compositional-video.jpg

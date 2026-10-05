@@ -1,0 +1,17 @@
+<header class="site-header"><div class="wrap site-header__inner">
+  <a class="brand" href="{{ '/' | relative_url }}"><span class="brand__name">{{ site.title }}</span><span class="brand__sub">{{ site.institute }}</span></a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="{{ '/#research' | relative_url }}">Research</a>
+    <a href="{{ '/publications.html' | relative_url }}"{% if page.nav == 'publications' %} aria-current="page"{% endif %}>Publications</a>
+    <a href="{{ '/people.html' | relative_url }}"{% if page.nav == 'people' %} aria-current="page"{% endif %}>People</a>
+    <a href="{{ '/#news' | relative_url }}">News</a>
+    <a href="{{ '/#contact' | relative_url }}">Contact</a>
+  </nav>
+  <div class="header-tools">
+    <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Dark theme" title="Switch theme">
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+    </button>
+    <button class="nav-toggle" type="button" aria-expanded="false">Menu</button>
+  </div>
+</div></header>

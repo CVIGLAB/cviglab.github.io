@@ -1,0 +1,54 @@
+/* ============================================================
+   cloud3d — morphing point-cloud figure.
+   Pairs with assets/js/cloud3d.js. Uses the palette tokens from
+   style.css (--bg, --line, --muted, --accent, --accent-tint, --f-sans).
+   Override the stage shape with e.g.
+     .my-figure .cloud3d__stage{ aspect-ratio:4 / 3; }
+   or set --cloud3d-aspect on the figure.
+   ============================================================ */
+
+.cloud3d{
+  margin:0;
+}
+
+.cloud3d__stage{
+  position:relative;
+  aspect-ratio:var(--cloud3d-aspect, 16 / 9);
+  width:100%;
+  overflow:hidden;
+  /* transparent: the canvas draws straight onto the page */
+  background:transparent;
+  /* keep vertical scroll on touch; the cloud only tilts on pointer move */
+  touch-action:pan-y pinch-zoom;
+}
+
+.cloud3d__stage canvas{
+  position:absolute;
+  inset:0;
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+/* No WebGL / CDN failure: keep the space, hint at a point cloud with a
+   faint dot field instead of anything heavy. */
+.cloud3d.is-fallback .cloud3d__stage{
+  border-radius:var(--r, 4px);
+  background:
+    radial-gradient(ellipse at 50% 50%, transparent 0 30%, var(--bg, #fafaf9) 72%),
+    radial-gradient(circle, color-mix(in srgb, var(--muted, #6b7280) 45%, transparent) 1px, transparent 1.4px) 0 0 / 12px 12px,
+    var(--accent-tint, #eef2fb);
+}
+.cloud3d.is-fallback canvas{ display:none; }
+
+.cloud3d figcaption{
+  margin-top:.6rem;
+  font-family:var(--f-sans, system-ui, sans-serif);
+  font-size:.82rem;
+  line-height:1.45;
+  color:var(--muted, #6b7280);
+}
+
+.cloud3d__state{
+  font-variant-numeric:tabular-nums;
+}

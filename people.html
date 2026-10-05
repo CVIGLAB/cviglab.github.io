@@ -1,0 +1,60 @@
+---
+layout: default
+title: People
+nav: people
+description: Members of the Computer Vision, Imaging & Graphics Lab at IIT Gandhinagar, led by Prof. Shanmuganathan Raman.
+---
+{%- assign people = site.data.people -%}
+{%- assign pi = people.pi -%}
+<section class="page-head"><div class="wrap">
+  <h1>People</h1>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="group">
+    <h2>Principal Investigator</h2>
+    <div class="pi">
+      <figure class="photo">{% if pi.photo %}<img src="{{ '/assets/people/' | append: pi.photo | relative_url }}" alt="{{ pi.name }}">{% endif %}</figure>
+      <div>
+        <h3 class="pi__name">{{ pi.name }}</h3>
+        <p class="pi__role">{{ pi.role }}</p>
+        <ul>{% for t in pi.titles %}<li>{{ t }}</li>{% endfor %}</ul>
+        <div class="links">
+          {%- if pi.links.scholar %}<a href="{{ pi.links.scholar }}" target="_blank" rel="noopener">Google Scholar</a>{% endif -%}
+          {%- if pi.links.orcid %}<a href="{{ pi.links.orcid }}" target="_blank" rel="noopener">ORCID</a>{% endif -%}
+          {%- if pi.links.email %}<a href="mailto:{{ pi.links.email }}">{{ pi.links.email }}</a>{% endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {%- for g in people.groups %}
+  <div class="group">
+    <h2>{{ g.title }} <span class="count">{{ g.members.size }}</span></h2>
+    {%- if g.members.size == 0 %}
+    <p class="note">{{ g.empty }}</p>
+    {%- else %}
+    <ul class="people{% if g.compact %} people--compact{% endif %}">
+      {%- for m in g.members %}
+      {% include person.html person=m %}
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+  </div>
+  {%- endfor %}
+
+  {%- if people.alumni %}
+  <div class="group">
+    <h2>PhD Alumni &amp; Placements <span class="count">{{ people.alumni.size }}</span></h2>
+    <div class="table-scroll"><table class="alumni">
+      <thead><tr><th scope="col">Name</th><th scope="col">Degree</th><th scope="col">Thesis / work</th><th scope="col">Now</th></tr></thead>
+      <tbody>
+      {%- for a in people.alumni %}
+        <tr><td>{{ a.name }}</td><td>{{ a.degree }}</td><td>{% if a.work %}{% include md.html text=a.work %}{% else %}&mdash;{% endif %}</td><td>{{ a.now | default: '&mdash;' }}</td></tr>
+      {%- endfor %}
+      </tbody>
+    </table></div>
+    <p class="note">Master's and research-staff alumni are listed on the <a href="https://shanmugaiit.github.io/team.html" target="_blank" rel="noopener">PI's team page</a>.</p>
+  </div>
+  {%- endif %}
+</div></section>

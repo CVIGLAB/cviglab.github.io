@@ -1,0 +1,33 @@
+---
+layout: default
+title: Publications
+nav: publications
+description: Selected publications and patents of the CVIG Lab, IIT Gandhinagar, with figures, links and BibTeX.
+---
+<section class="page-head"><div class="wrap">
+  <h1>Publications</h1>
+  <p>Selected recent papers and patents. The complete record spans 140+ peer-reviewed publications; see <a href="{{ site.data.people.pi.links.scholar }}" target="_blank" rel="noopener">Google Scholar</a> for the full list.</p>
+</div></section>
+
+<div class="wrap">
+{%- assign years = site.data.publications | group_by: "year" | sort: "name" | reverse -%}
+{%- for y in years %}
+<section class="year-group" aria-labelledby="y{{ y.name }}">
+  <h2 id="y{{ y.name }}">{{ y.name }}</h2>
+  <ol class="pubs">
+    {%- for p in y.items %}
+    {% include pub.html pub=p %}
+    {%- endfor %}
+  </ol>
+</section>
+{%- endfor %}
+</div>
+
+<section class="section" aria-labelledby="patents-h"><div class="wrap">
+  <h2 id="patents-h" class="h-section">Patents</h2>
+  <ul class="patents">
+    {%- for t in site.data.site.patents %}
+    <li><span class="mono">{{ t.number }}, {{ t.year }}</span><div><span class="t">{% if t.url %}<a href="{{ t.url }}" target="_blank" rel="noopener">{{ t.title }}</a>{% else %}{{ t.title }}{% endif %}</span><br>{% include md.html text=t.inventors %}</div></li>
+    {%- endfor %}
+  </ul>
+</div></section>

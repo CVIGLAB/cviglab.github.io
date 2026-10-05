@@ -1,0 +1,21 @@
+# Site settings. GitHub Pages builds this site with Jekyll automatically on push.
+title: CVIG Lab
+long_title: Computer Vision, Imaging & Graphics Laboratory
+institute: IIT Gandhinagar
+description: >-
+  The Computer Vision, Imaging & Graphics Lab at IIT Gandhinagar studies how images
+  are formed and how to invert that process to recover shape, material and light.
+url: https://cviglab.github.io
+baseurl: ""
+email: shanmuga@iitgn.ac.in
+address: Academic Block 13, Rooms 313 & 318, IIT Gandhinagar, Palaj, Gujarat 382355
+og_image: /assets/images/cviglogo.png
+
+markdown: kramdown
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - assets/teasers/SOURCES.md

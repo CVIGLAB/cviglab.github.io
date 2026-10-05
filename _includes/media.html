@@ -1,0 +1,7 @@
+{%- comment -%} Figure slot. Params: image (file name), dir (default assets/teasers), label, class {%- endcomment -%}
+{%- assign dir = include.dir | default: 'assets/teasers' -%}
+<figure class="media {{ include.class }}" data-label="{{ include.label | escape }}">
+  {%- if include.image and include.image != '' -%}
+  <img src="{{ '/' | append: dir | append: '/' | append: include.image | relative_url }}" alt="Figure from {{ include.label | escape }}" loading="lazy">
+  {%- endif -%}
+</figure>

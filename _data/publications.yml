@@ -1,0 +1,351 @@
+# Publications. Newest first. Add a new entry at the top of the list.
+#   authors: Markdown — wrap lab members in **double asterisks** to bold them.
+#   image:   file name in assets/teasers/ (leave blank for the colour-chart placeholder).
+#   links:   any of project / paper / code / video / slides; omit unknown ones.
+#   highlight: true  -> shown in the home-page 'Research highlights' strip (with `summary`).
+#   selected: true   -> listed under 'Selected publications' on the home page.
+#   bibtex:  paste the citation as-is (keep the two-space indent under `|`).
+
+- id: got-pcd-wacv27
+  title: "GOT-PCD: Geometry-Guided Optimal Transport for Point Cloud Denoising"
+  short: "GOT-PCD"
+  authors: "**Seema Kumari**, Sayak Dutta, **Shanmuganathan Raman**"
+  venue: "WACV 2027"
+  venue_full: "IEEE/CVF Winter Conference on Applications of Computer Vision"
+  year: 2027
+  image:
+  selected: true
+  links: {}
+  bibtex: |
+    @inproceedings{kumari2027gotpcd,
+      title     = {GOT-PCD: Geometry-Guided Optimal Transport for Point Cloud Denoising},
+      author    = {Kumari, Seema and Dutta, Sayak and Raman, Shanmuganathan},
+      booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+      year      = {2027}
+    }
+
+- id: multisource-audio-bmvc26
+  title: "Why Multi-Source Audio Fails to Compose: A Geometric Diagnosis and Its Remedy"
+  short: "Multi-Source Audio"
+  authors: "Anurag Singh, **Prajwal Singh**, **Shanmuganathan Raman**"
+  venue: "BMVC 2026"
+  venue_full: "British Machine Vision Conference"
+  year: 2026
+  image:
+  selected: true
+  links: {}
+  bibtex: |
+    @inproceedings{singh2026multisource,
+      title     = {Why Multi-Source Audio Fails to Compose: A Geometric Diagnosis and Its Remedy},
+      author    = {Singh, Anurag and Singh, Prajwal and Raman, Shanmuganathan},
+      booktitle = {British Machine Vision Conference (BMVC)},
+      year      = {2026}
+    }
+
+- id: compositional-video-wacv26
+  title: "Synthesizing Compositional Videos from Text Description"
+  short: "Compositional Video"
+  authors: "**Prajwal Singh**, Kuldeep Kulkarni, **Shanmuganathan Raman**, Harsh Rangwani"
+  venue: "WACV 2026"
+  venue_full: "IEEE/CVF Winter Conference on Applications of Computer Vision"
+  year: 2026
+  image: compositional-video.jpg
+  selected: true
+  links:
+    paper: https://openaccess.thecvf.com/content/WACV2026/papers/Singh_Synthesizing_Compositional_Videos_from_Text_Description_WACV_2026_paper.pdf
+  bibtex: |
+    @inproceedings{singh2026synthesizing,
+      title     = {Synthesizing Compositional Videos from Text Description},
+      author    = {Singh, Prajwal and Kulkarni, Kuldeep and Raman, Shanmuganathan and Rangwani, Harsh},
+      booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+      year      = {2026}
+    }
+
+- id: rasp-cvpr25
+  title: "RASP: Revisiting 3D Anamorphic Art for Shadow-Guided Packing of Irregular Objects"
+  short: "RASP"
+  authors: "**Soumyaratna Debnath**, **Ashish Tiwari**, **Kaustubh Sadekar**, **Shanmuganathan Raman**"
+  venue: "CVPR 2025"
+  venue_full: "IEEE/CVF Conference on Computer Vision and Pattern Recognition"
+  year: 2025
+  image: rasp.jpg
+  highlight: true
+  summary: "Anamorphic 3D shadow packing of irregular objects."
+  selected: true
+  links:
+    paper: https://openaccess.thecvf.com/content/CVPR2025/papers/Debnath_RASP_Revisiting_3D_Anamorphic_Art_for_Shadow-Guided_Packing_of_Irregular_CVPR_2025_paper.pdf
+  bibtex: |
+    @inproceedings{debnath2025rasp,
+      title     = {RASP: Revisiting 3D Anamorphic Art for Shadow-Guided Packing of Irregular Objects},
+      author    = {Debnath, Soumyaratna and Tiwari, Ashish and Sadekar, Kaustubh and Raman, Shanmuganathan},
+      booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+      year      = {2025}
+    }
+
+- id: tensois-cgf25
+  title: "TensoIS: A Step Towards Feed-Forward Tensorial Inverse Scattering for Perlin Distributed Heterogeneous Media"
+  short: "TensoIS"
+  authors: "**Ashish Tiwari**, Satyam Bhardwaj, Yash Bachwana, Parag Sarvoday Sahu, T. M. Feroz Ali, Bhargava Chintalapati, **Shanmuganathan Raman**"
+  venue: "CGF 2025"
+  venue_full: "Computer Graphics Forum"
+  year: 2025
+  image: tensois.jpg
+  highlight: true
+  summary: "Feed-forward tensorial inverse scattering in heterogeneous media."
+  selected: true
+  links:
+    paper: https://onlinelibrary.wiley.com/doi/10.1111/cgf.70242
+  bibtex: |
+    @article{tiwari2025tensois,
+      title   = {TensoIS: A Step Towards Feed-Forward Tensorial Inverse Scattering for Perlin Distributed Heterogeneous Media},
+      author  = {Tiwari, Ashish and Bhardwaj, Satyam and Bachwana, Yash and Sahu, Parag Sarvoday and Ali, T. M. Feroz and Chintalapati, Bhargava and Raman, Shanmuganathan},
+      journal = {Computer Graphics Forum},
+      year    = {2025},
+      doi     = {10.1111/cgf.70242}
+    }
+
+- id: continual-ngp-bmvc25
+  title: "Incremental Multi-Scene Modeling via Continual Neural Graphics Primitives"
+  short: "Continual NGP"
+  authors: "**Prajwal Singh**, **Ashish Tiwari**, Gautam Vashishtha, **Shanmuganathan Raman**"
+  venue: "BMVC 2025"
+  venue_full: "British Machine Vision Conference"
+  year: 2025
+  image: continual-ngp.jpg
+  links:
+    paper: https://bmva-archive.org.uk/bmvc/2025/assets/papers/Paper_630/paper.pdf
+  bibtex: |
+    @inproceedings{singh2025incremental,
+      title     = {Incremental Multi-Scene Modeling via Continual Neural Graphics Primitives},
+      author    = {Singh, Prajwal and Tiwari, Ashish and Vashishtha, Gautam and Raman, Shanmuganathan},
+      booktitle = {British Machine Vision Conference (BMVC)},
+      year      = {2025}
+    }
+
+- id: panohair-bmvc25
+  title: "PanoHair: Detailed Hair Strand Synthesis on Volumetric Heads"
+  short: "PanoHair"
+  authors: "**Shashikant Verma**, **Shanmuganathan Raman**"
+  venue: "BMVC 2025"
+  venue_full: "British Machine Vision Conference"
+  year: 2025
+  image: panohair.jpg
+  links:
+    paper: https://bmva-archive.org.uk/bmvc/2025/assets/papers/Paper_593/paper.pdf
+  bibtex: |
+    @inproceedings{verma2025panohair,
+      title     = {PanoHair: Detailed Hair Strand Synthesis on Volumetric Heads},
+      author    = {Verma, Shashikant and Raman, Shanmuganathan},
+      booktitle = {British Machine Vision Conference (BMVC)},
+      year      = {2025}
+    }
+
+- id: l3d-pose-icassp25
+  title: "L3D-Pose: Lifting Pose for 3D Avatars from a Single Camera in the Wild"
+  short: "L3D-Pose"
+  authors: "**Soumyaratna Debnath**, Harish Katti, **Shashikant Verma**, **Shanmuganathan Raman**"
+  venue: "ICASSP 2025"
+  venue_full: "IEEE International Conference on Acoustics, Speech and Signal Processing"
+  year: 2025
+  image: l3d-pose.jpg
+  links:
+    project: https://soumyaratnadebnath.github.io/L3D-Pose/
+  bibtex: |
+    @inproceedings{debnath2025l3dpose,
+      title     = {L3D-Pose: Lifting Pose for 3D Avatars from a Single Camera in the Wild},
+      author    = {Debnath, Soumyaratna and Katti, Harish and Verma, Shashikant and Raman, Shanmuganathan},
+      booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+      year      = {2025}
+    }
+
+- id: despeckling-icip25
+  title: "Deep Unsupervised Despeckling with Unbiased Risk Estimation"
+  short: "Despeckling"
+  authors: "**Ashutosh Gupta**, Chandra Sekhar Seelamantula, Thierry Blu, Nitant Dube, **Shanmuganathan Raman**"
+  venue: "ICIP 2025"
+  venue_full: "IEEE International Conference on Image Processing"
+  year: 2025
+  image:
+  links:
+    paper: https://ieeexplore.ieee.org/document/11084619/
+  bibtex: |
+    @inproceedings{gupta2025despeckling,
+      title     = {Deep Unsupervised Despeckling with Unbiased Risk Estimation},
+      author    = {Gupta, Ashutosh and Seelamantula, Chandra Sekhar and Blu, Thierry and Dube, Nitant and Raman, Shanmuganathan},
+      booktitle = {IEEE International Conference on Image Processing (ICIP)},
+      year      = {2025}
+    }
+
+- id: merlin-eccv24
+  title: "MERLiN: Single-Shot Material Estimation and ReLighting for Photometric Stereo"
+  short: "MERLiN"
+  authors: "**Ashish Tiwari**, Satoshi Ikehata, **Shanmuganathan Raman**"
+  venue: "ECCV 2024"
+  venue_full: "European Conference on Computer Vision"
+  year: 2024
+  image: merlin.jpg
+  highlight: true
+  summary: "Single-shot material estimation and relighting for photometric stereo."
+  selected: true
+  links:
+    paper: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/01894.pdf
+  bibtex: |
+    @inproceedings{tiwari2024merlin,
+      title     = {MERLiN: Single-Shot Material Estimation and ReLighting for Photometric Stereo},
+      author    = {Tiwari, Ashish and Ikehata, Satoshi and Raman, Shanmuganathan},
+      booktitle = {European Conference on Computer Vision (ECCV)},
+      year      = {2024}
+    }
+
+- id: scribgen-siggraphasia24
+  title: "ScribGen: Generating Scribble Art Through Metaheuristics"
+  short: "ScribGen"
+  authors: "**Soumyaratna Debnath**, **Ashish Tiwari**, **Shanmuganathan Raman**"
+  venue: "SIGGRAPH Asia 2024"
+  venue_full: "ACM SIGGRAPH Asia"
+  year: 2024
+  image: scribgen.jpg
+  highlight: true
+  summary: "Scribble art generated via metaheuristic optimisation."
+  selected: true
+  links:
+    project: https://soumyaratnadebnath.github.io/ScribGen/
+  bibtex: |
+    @inproceedings{debnath2024scribgen,
+      title     = {ScribGen: Generating Scribble Art Through Metaheuristics},
+      author    = {Debnath, Soumyaratna and Tiwari, Ashish and Raman, Shanmuganathan},
+      booktitle = {ACM SIGGRAPH Asia},
+      year      = {2024}
+    }
+
+- id: knots-sgp24
+  title: "Search Me Knot, Render Me Knot: Embedding Search and Differentiable Rendering of Knots in 3D"
+  short: "Knots"
+  authors: "**Aalok Gangopadhyay**, Paras Gupta, Tarun Sharma, **Prajwal Singh**, **Shanmuganathan Raman**"
+  venue: "SGP 2024"
+  venue_full: "Symposium on Geometry Processing, Computer Graphics Forum"
+  year: 2024
+  image: knots.jpg
+  links:
+    paper: https://onlinelibrary.wiley.com/doi/10.1111/cgf.15138
+  bibtex: |
+    @article{gangopadhyay2024knot,
+      title   = {Search Me Knot, Render Me Knot: Embedding Search and Differentiable Rendering of Knots in 3D},
+      author  = {Gangopadhyay, Aalok and Gupta, Paras and Sharma, Tarun and Singh, Prajwal and Raman, Shanmuganathan},
+      journal = {Computer Graphics Forum},
+      year    = {2024},
+      doi     = {10.1111/cgf.15138}
+    }
+
+- id: graphfill-wacv24
+  title: "GraphFill: Deep Image Inpainting Using Graphs"
+  short: "GraphFill"
+  authors: "**Shashikant Verma**, Aman Sharma, Roopa Sheshadri, **Shanmuganathan Raman**"
+  venue: "WACV 2024"
+  venue_full: "IEEE/CVF Winter Conference on Applications of Computer Vision"
+  year: 2024
+  image: graphfill.jpg
+  links:
+    paper: https://openaccess.thecvf.com/content/WACV2024/papers/Verma_GraphFill_Deep_Image_Inpainting_Using_Graphs_WACV_2024_paper.pdf
+  bibtex: |
+    @inproceedings{verma2024graphfill,
+      title     = {GraphFill: Deep Image Inpainting Using Graphs},
+      author    = {Verma, Shashikant and Sharma, Aman and Sheshadri, Roopa and Raman, Shanmuganathan},
+      booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+      year      = {2024}
+    }
+
+- id: ss-sfp-pg23
+  title: "SS-SfP: Neural Inverse Rendering for Self-Supervised Shape from (Mixed) Polarization"
+  short: "SS-SfP"
+  authors: "**Ashish Tiwari**, **Shanmuganathan Raman**"
+  venue: "Pacific Graphics 2023"
+  venue_full: "Pacific Graphics"
+  year: 2023
+  image: ss-sfp.jpg
+  links:
+    paper: https://diglib.eg.org/items/18975fda-cbb5-403f-a41f-ea656a759531
+  bibtex: |
+    @inproceedings{tiwari2023sssfp,
+      title     = {SS-SfP: Neural Inverse Rendering for Self-Supervised Shape from (Mixed) Polarization},
+      author    = {Tiwari, Ashish and Raman, Shanmuganathan},
+      booktitle = {Pacific Graphics},
+      year      = {2023}
+    }
+
+- id: hand-shadow-art-pg23
+  title: "Hand Shadow Art: A Differentiable Rendering Perspective"
+  short: "Hand Shadow Art"
+  authors: "**Aalok Gangopadhyay**, **Prajwal Singh**, **Ashish Tiwari**, **Shanmuganathan Raman**"
+  venue: "Pacific Graphics 2023"
+  venue_full: "Pacific Graphics"
+  year: 2023
+  image: hand-shadow-art.jpg
+  links:
+    paper: https://doi.org/10.2312/pg.20231279
+  bibtex: |
+    @inproceedings{gangopadhyay2023handshadow,
+      title     = {Hand Shadow Art: A Differentiable Rendering Perspective},
+      author    = {Gangopadhyay, Aalok and Singh, Prajwal and Tiwari, Ashish and Raman, Shanmuganathan},
+      booktitle = {Pacific Graphics},
+      year      = {2023},
+      doi       = {10.2312/pg.20231279}
+    }
+
+- id: stft-tpami22
+  title: "Depthwise Spatio-Temporal STFT Convolutional Neural Networks for Human Action Recognition"
+  short: "STFT"
+  authors: "**Sudhakar Kumawat**, Manisha Verma, Yuta Nakashima, **Shanmuganathan Raman**"
+  venue: "TPAMI 2022"
+  venue_full: "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+  year: 2022
+  image: stft.jpg
+  links:
+    paper: https://doi.org/10.1109/TPAMI.2021.3076522
+  bibtex: |
+    @article{kumawat2022stft,
+      title   = {Depthwise Spatio-Temporal STFT Convolutional Neural Networks for Human Action Recognition},
+      author  = {Kumawat, Sudhakar and Verma, Manisha and Nakashima, Yuta and Raman, Shanmuganathan},
+      journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+      year    = {2022},
+      doi     = {10.1109/TPAMI.2021.3076522}
+    }
+
+- id: deepps2-eccv22
+  title: "DeepPS2: Revisiting Photometric Stereo with Two Differently Illuminated Images"
+  short: "DeepPS2"
+  authors: "**Ashish Tiwari**, **Shanmuganathan Raman**"
+  venue: "ECCV 2022"
+  venue_full: "European Conference on Computer Vision"
+  year: 2022
+  image: deepps2.jpg
+  links:
+    project: https://sites.google.com/iitgn.ac.in/deepps2/home
+  bibtex: |
+    @inproceedings{tiwari2022deepps2,
+      title     = {DeepPS2: Revisiting Photometric Stereo with Two Differently Illuminated Images},
+      author    = {Tiwari, Ashish and Raman, Shanmuganathan},
+      booktitle = {European Conference on Computer Vision (ECCV)},
+      year      = {2022}
+    }
+
+- id: shadowart-wacv22
+  title: "Shadow Art Revisited: A Differentiable Rendering Based Approach"
+  short: "Shadow Art"
+  authors: "**Kaustubh Sadekar**, **Ashish Tiwari**, **Shanmuganathan Raman**"
+  venue: "WACV 2022"
+  venue_full: "IEEE/CVF Winter Conference on Applications of Computer Vision"
+  year: 2022
+  image: shadowart.jpg
+  highlight: true
+  summary: "Differentiable rendering for shadow art."
+  selected: true
+  links:
+    project: https://kaustubh-sadekar.github.io/ShadowArt-Revisited/
+  bibtex: |
+    @inproceedings{sadekar2022shadowart,
+      title     = {Shadow Art Revisited: A Differentiable Rendering Based Approach},
+      author    = {Sadekar, Kaustubh and Tiwari, Ashish and Raman, Shanmuganathan},
+      booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+      year      = {2022}
+    }

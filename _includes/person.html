@@ -1,0 +1,23 @@
+{%- assign m = include.person -%}
+<li class="person">
+  <figure class="photo">{% if m.photo %}<img src="{{ '/assets/people/' | append: m.photo | relative_url }}" alt="{{ m.name }}" loading="lazy">{% endif %}</figure>
+  <div>
+    <h3 class="person__name">{{ m.name }}</h3>
+    {%- if m.role %}<p class="person__meta">{{ m.role }}</p>{% endif %}
+    {%- if m.topic %}<p class="person__topic">{{ m.topic }}</p>{% endif %}
+    {%- if m.fellowships or m.affiliations %}
+    <div class="tags">
+      {%- for f in m.fellowships %}<span class="tag tag--fellow">{{ f }}</span>{% endfor -%}
+      {%- for a in m.affiliations %}<span class="tag">{{ a }}</span>{% endfor -%}
+    </div>
+    {%- endif %}
+    {%- if m.links %}
+    <div class="links">
+      {%- if m.links.scholar %}<a href="{{ m.links.scholar }}" target="_blank" rel="noopener">Scholar</a>{% endif -%}
+      {%- if m.links.github %}<a href="{{ m.links.github }}" target="_blank" rel="noopener">GitHub</a>{% endif -%}
+      {%- if m.links.website %}<a href="{{ m.links.website }}" target="_blank" rel="noopener">Website</a>{% endif -%}
+      {%- if m.links.linkedin %}<a href="{{ m.links.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif -%}
+    </div>
+    {%- endif %}
+  </div>
+</li>

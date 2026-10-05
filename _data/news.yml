@@ -1,0 +1,45 @@
+# News, newest first. The home page shows the 8 most recent items (sorted by date).
+# Add a new item at the top:
+#
+# - date: 2026-10-20        # YYYY-MM-DD, shown as "Oct 2026"
+#   tag: paper              # award | defense | paper | service | talk | event
+#   featured: true          # optional: highlighted dot and bold text
+#   image: rasp.jpg         # optional: figure from assets/teasers/
+#   date_label: "2026"      # optional: override the displayed date
+#   text: Our paper on **shadow packing** is accepted at CVPR. [Project](https://example.org)
+
+- date: 2026-09-15
+  tag: award
+  featured: true
+  text: "Arjun Badola and Dikshit Hegde win the Qualcomm Innovation Fellowship India 2026."
+
+- date: 2026-06-15
+  tag: award
+  text: "Dikshit Hegde is awarded the IndiaAI PhD Fellowship."
+
+- date: 2026-05-15
+  tag: defense
+  featured: true
+  image: compositional-video.jpg
+  text: "Prajwal Singh defends his PhD thesis, *Scalable Generative Vision and Neural Decoding*."
+
+- date: 2026-04-15
+  tag: defense
+  featured: true
+  text: "Seema Kumari defends her PhD thesis on the restoration and analysis of 3D point clouds."
+
+- date: 2026-01-15
+  date_label: "2026"
+  tag: paper
+  text: "Lab papers accepted at IEEE ICIP 2026, ICASSP 2026, ISBI 2026 and WACV 2026."
+
+- date: 2025-12-15
+  tag: defense
+  featured: true
+  image: merlin.jpg
+  text: "Ashish Tiwari defends his PhD thesis and joins Dolby Laboratories."
+
+- date: 2025-09-15
+  tag: service
+  featured: true
+  text: "Prof. Raman takes charge as Head of the Department of Computer Science & Engineering, IIT Gandhinagar."
