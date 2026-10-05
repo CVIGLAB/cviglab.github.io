@@ -26,7 +26,8 @@ groups:
     members:
       - name: "Dr. Prajwal Singh"
         role: "Post-Doctoral Fellow, IIT Gandhinagar; PhD, CSE, 2021–2026"
-        links: { website: https://prajwalsingh.github.io/, scholar: https://scholar.google.com/citations?user=w5GbFHIAAAAJ, github: https://github.com/prajwalsingh }
+        photo: prajwal-singh.jpg
+        links: { website: https://prajwalsingh.github.io/, scholar: https://scholar.google.com/citations?user=w5GbFHIAAAAJ, github: https://github.com/prajwalsingh, linkedin: https://www.linkedin.com/in/prajwalsingh15/ }
         topic: "Generative vision and neural decoding"
       - name: "Dr. Seema Kumari"
         role: "Post-Doctoral Fellow, IIT Gandhinagar; PhD, EE, 2020–2026"
@@ -49,6 +50,7 @@ groups:
         fellowships: ["Director’s Fellow"]
       - name: "Arjun Badola"
         role: "PhD, AI, since 2024"
+        links: { linkedin: https://www.linkedin.com/in/arjun-badola/ }
         fellowships: ["Visvesvaraya Fellow", "Qualcomm Innovation Fellow"]
       - name: "Dikshit Hegde"
         role: "PhD, CSE, since 2025"
@@ -66,6 +68,8 @@ groups:
         affiliations: ["IITGN–SAC"]
       - name: "Ankur Garg"
         role: "PhD, EE, since 2025"
+        photo: ankur-garg.jpg
+        links: { scholar: https://scholar.google.com/citations?user=cgUhaKgAAAAJ }
         fellowships: ["Vigyan Yuva – Shanti Swarup Bhatnagar Prize"]
         affiliations: ["IITGN–SAC"]
       - name: "Pramod Mishra"
@@ -79,6 +83,7 @@ groups:
     members:
       - name: "Prateek Takshak"
         role: "Dual Degree, CSE"
+        links: { linkedin: https://www.linkedin.com/in/prateek-takshak-1440a928a/ }
       - name: "John Debbarma"
         role: "Dual Degree, CSE"
         photo: john-debbarma.jpg
@@ -109,6 +114,7 @@ groups:
         role: "Dual Degree, EE"
       - name: "Arnav Jagtap"
         role: "Dual Degree, EE"
+        links: { linkedin: https://www.linkedin.com/in/arnavjagtap/ }
       - name: "Kancheti Aparna Mala"
         role: "M.Tech, EE"
       - name: "Amisha Vaghela"
