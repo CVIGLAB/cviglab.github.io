@@ -26,18 +26,25 @@ groups:
     members:
       - name: "Dr. Prajwal Singh"
         role: "Post-Doctoral Fellow, IIT Gandhinagar; PhD, CSE, 2021–2026"
+        links: { website: https://prajwalsingh.github.io/, scholar: https://scholar.google.com/citations?user=w5GbFHIAAAAJ, github: https://github.com/prajwalsingh }
         topic: "Generative vision and neural decoding"
       - name: "Dr. Seema Kumari"
         role: "Post-Doctoral Fellow, IIT Gandhinagar; PhD, EE, 2020–2026"
+        photo: seema-kumari.jpg
+        links: { scholar: https://scholar.google.com/citations?user=MMUzn-AAAAAJ }
         topic: "Restoration and analysis of 3D point clouds"
 
   - title: Ph.D. Scholars
     members:
       - name: "Akbar Ali"
         role: "PhD, CSE, since 2023"
+        photo: akbar-ali.jpg
+        links: { website: https://aamaanakbar.github.io/, scholar: https://scholar.google.com/citations?user=g-2Aix8AAAAJ, github: https://github.com/aamaanakbar }
         fellowships: ["Visvesvaraya Fellow"]
       - name: "Anupam Sharma"
         role: "PhD, CSE, since 2024"
+        photo: anupam-sharma.jpg
+        links: { website: https://anupamsharma.in/, scholar: https://scholar.google.com/citations?user=ZOYSYJEAAAAJ, github: https://github.com/anp-scp }
         topic: "EEG representation learning"
         fellowships: ["Director’s Fellow"]
       - name: "Arjun Badola"
@@ -45,9 +52,13 @@ groups:
         fellowships: ["Visvesvaraya Fellow", "Qualcomm Innovation Fellow"]
       - name: "Dikshit Hegde"
         role: "PhD, CSE, since 2025"
+        photo: dikshit-hegde.jpg
+        links: { website: https://dikshithegde.github.io/, scholar: https://scholar.google.com/citations?user=KZYwiasAAAAJ, github: https://github.com/DikshitHegde }
         fellowships: ["IndiaAI PhD Fellow", "Qualcomm Innovation Fellow"]
       - name: "Ashutosh Gupta"
         role: "PhD, AI, since 2024"
+        photo: ashutosh-gupta.jpg
+        links: { scholar: https://scholar.google.com/citations?user=GNekfLwAAAAJ }
         topic: "Image despeckling"
         affiliations: ["IITGN–SAC"]
       - name: "Saurabh Tripathi"
@@ -70,6 +81,8 @@ groups:
         role: "Dual Degree, CSE"
       - name: "John Debbarma"
         role: "Dual Degree, CSE"
+        photo: john-debbarma.jpg
+        links: { github: https://github.com/JohnTwiprahamDebbarma }
       - name: "Deepanjali Kumari"
         role: "Dual Degree, CSE"
       - name: "Pankaj"
