@@ -6,7 +6,7 @@ facts:
   - label: Est.
     value: "2013"
   - label: Record
-    value: 140+ papers, 6 patents filed
+    value: 140+ papers, 6 patents
 
 courses:
   - code: ES 666

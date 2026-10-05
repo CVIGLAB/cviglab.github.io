@@ -26,7 +26,6 @@ groups:
       - name: "Dr. Prajwal Singh"
         role: "Post-Doctoral Fellow, IIT Gandhinagar; PhD, CSE, 2021–2026"
         topic: "Generative vision and neural decoding"
-        fellowships: ["PMRF Scholar"]
       - name: "Dr. Seema Kumari"
         role: "Post-Doctoral Fellow, IIT Gandhinagar; PhD, EE, 2020–2026"
         topic: "Restoration and analysis of 3D point clouds"
