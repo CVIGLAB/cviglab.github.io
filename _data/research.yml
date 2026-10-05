@@ -1,7 +1,7 @@
 # Research areas on the home page. `image` = file in assets/teasers/ (blank = colour-chart placeholder).
 - title: Computational Photography & HDR
   text: High-dynamic-range imaging from ordinary cameras; tone mapping and exposure fusion.
-  image:
+  image: area-hdr.jpg
 - title: Photometric Stereo & Inverse Rendering
   text: Shape, reflectance and light from images, polarization and scattering.
   image: merlin.jpg
@@ -13,7 +13,7 @@
   image: shadowart.jpg
 - title: Saliency, Symmetry & Retargeting
   text: Symmetry detection, saliency and content-aware retargeting.
-  image:
+  image: area-symmetry.jpg
 - title: Learning, Restoration & Generative Vision
   text: Restoration, inpainting, EEG decoding and generative video.
   image: compositional-video.jpg

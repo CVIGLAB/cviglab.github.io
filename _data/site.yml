@@ -12,15 +12,15 @@ courses:
   - code: ES 666
     title: Computer Vision
     text: Classical and learning-based vision, from image formation to generative models.
-    url: ../es666.html
+    url: https://shanmugaiit.github.io/es666.html
 
 join:
   text: Join through IIT Gandhinagar's Summer Research Internship Programme (SRIP) or its doctoral admissions.
   links:
     - label: SRIP internships
-      url: https://sites.iitgn.ac.in/srip/
+      url: https://srip.iitgn.ac.in/info/
     - label: PhD admissions
-      url: https://www.iitgn.ac.in/admission.htm
+      url: https://iitgn.ac.in/admissions/phd
 
 departments:
   - label: Electrical Engineering

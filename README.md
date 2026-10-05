@@ -58,7 +58,7 @@ Copy an existing entry in `_data/publications.yml` to the top of the file and ed
     }
 ```
 
-Links you leave out show as dimmed buttons (Paper, Code) or are hidden (Project Page, Video, Slides).
+Link keys: `project`, `paper`, `code`, `video`, `slides`, `accepted` (a conference accepted-papers list). Links you leave out show as dimmed buttons (Paper, Code) or are hidden (the rest).
 
 ### Add a person
 

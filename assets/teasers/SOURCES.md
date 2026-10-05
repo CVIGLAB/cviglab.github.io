@@ -19,5 +19,7 @@ Each image is cropped from the paper's own figure or official project page. Capt
 | hand-shadow-art.jpg | Fig. 1, https://arxiv.org/pdf/2505.21252v1 |
 | stft.jpg | Fig. 1, https://arxiv.org/pdf/2007.11365v1 |
 | deepps2.jpg | Fig. 1, https://arxiv.org/pdf/2207.02025v2 |
+| area-hdr.jpg | Fig. 1 (teaser, captioned "Table 1"), https://arxiv.org/pdf/2307.02814 |
+| area-symmetry.jpg | Fig. 1(b), https://arxiv.org/pdf/1805.09232 |
 
-Not yet available (placeholder shown): got-pcd.jpg, multisource-audio.jpg, despeckling.jpg.
+Not yet public (placeholder shown): GOT-PCD (WACV 2027), Multi-Source Audio (BMVC 2026, listed as paper #583), Despeckling (ICIP 2025, IEEE only). Checked arXiv October 2026.

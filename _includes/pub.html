@@ -8,7 +8,7 @@
     <p class="pub__authors">{% include md.html text=p.authors %}</p>
     <div class="pub__meta"><span class="venue">{{ p.venue }}</span><span>{{ p.venue_full }}</span></div>
     <div class="pub__actions">
-      {%- assign kinds = "project:Project Page,paper:Paper,code:Code,video:Video,slides:Slides" | split: "," -%}
+      {%- assign kinds = "project:Project Page,paper:Paper,code:Code,video:Video,slides:Slides,accepted:Accepted papers list" | split: "," -%}
       {%- for k in kinds -%}
         {%- assign kv = k | split: ":" -%}
         {%- assign href = p.links[kv[0]] -%}

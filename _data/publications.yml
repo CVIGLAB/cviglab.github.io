@@ -1,7 +1,7 @@
 # Publications. Newest first. Add a new entry at the top of the list.
 #   authors: Markdown — wrap lab members in **double asterisks** to bold them.
 #   image:   file name in assets/teasers/ (leave blank for the colour-chart placeholder).
-#   links:   any of project / paper / code / video / slides; omit unknown ones.
+#   links:   any of project / paper / code / video / slides / accepted; omit unknown ones.
 #   highlight: true  -> shown in the home-page 'Research highlights' strip (with `summary`).
 #   selected: true   -> listed under 'Selected publications' on the home page.
 #   bibtex:  paste the citation as-is (keep the two-space indent under `|`).
@@ -33,7 +33,8 @@
   year: 2026
   image:
   selected: true
-  links: {}
+  links:
+    accepted: https://bmvc2026.bmva.org/programme/accepted_papers/
   bibtex: |
     @inproceedings{singh2026multisource,
       title     = {Why Multi-Source Audio Fails to Compose: A Geometric Diagnosis and Its Remedy},
@@ -83,7 +84,7 @@
     }
 
 - id: tensois-cgf25
-  title: "TensoIS: A Step Towards Feed-Forward Tensorial Inverse Scattering for Perlin Distributed Heterogeneous Media"
+  title: "TensoIS: A Step Towards Feed-Forward Tensorial Inverse Subsurface Scattering for Perlin Distributed Heterogeneous Media"
   short: "TensoIS"
   authors: "**Ashish Tiwari**, Satyam Bhardwaj, Yash Bachwana, Parag Sarvoday Sahu, T. M. Feroz Ali, Bhargava Chintalapati, **Shanmuganathan Raman**"
   venue: "CGF 2025"
@@ -91,13 +92,13 @@
   year: 2025
   image: tensois.jpg
   highlight: true
-  summary: "Feed-forward tensorial inverse scattering in heterogeneous media."
+  summary: "Feed-forward tensorial inverse subsurface scattering in heterogeneous media."
   selected: true
   links:
     paper: https://onlinelibrary.wiley.com/doi/10.1111/cgf.70242
   bibtex: |
     @article{tiwari2025tensois,
-      title   = {TensoIS: A Step Towards Feed-Forward Tensorial Inverse Scattering for Perlin Distributed Heterogeneous Media},
+      title   = {TensoIS: A Step Towards Feed-Forward Tensorial Inverse Subsurface Scattering for Perlin Distributed Heterogeneous Media},
       author  = {Tiwari, Ashish and Bhardwaj, Satyam and Bachwana, Yash and Sahu, Parag Sarvoday and Ali, T. M. Feroz and Chintalapati, Bhargava and Raman, Shanmuganathan},
       journal = {Computer Graphics Forum},
       year    = {2025},
@@ -149,6 +150,7 @@
   year: 2025
   image: l3d-pose.jpg
   links:
+    paper: https://arxiv.org/abs/2501.01174
     project: https://soumyaratnadebnath.github.io/L3D-Pose/
   bibtex: |
     @inproceedings{debnath2025l3dpose,
@@ -209,6 +211,7 @@
   summary: "Scribble art generated via metaheuristic optimisation."
   selected: true
   links:
+    paper: https://arxiv.org/abs/2411.08673
     project: https://soumyaratnadebnath.github.io/ScribGen/
   bibtex: |
     @inproceedings{debnath2024scribgen,
@@ -320,6 +323,7 @@
   year: 2022
   image: deepps2.jpg
   links:
+    paper: https://arxiv.org/abs/2207.02025
     project: https://sites.google.com/iitgn.ac.in/deepps2/home
   bibtex: |
     @inproceedings{tiwari2022deepps2,
@@ -341,6 +345,7 @@
   summary: "Differentiable rendering for shadow art."
   selected: true
   links:
+    paper: https://arxiv.org/abs/2107.14539
     project: https://kaustubh-sadekar.github.io/ShadowArt-Revisited/
   bibtex: |
     @inproceedings{sadekar2022shadowart,

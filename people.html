@@ -20,6 +20,7 @@ description: Members of the Computer Vision, Imaging & Graphics Lab at IIT Gandh
         <p class="pi__role">{{ pi.role }}</p>
         <ul>{% for t in pi.titles %}<li>{{ t }}</li>{% endfor %}</ul>
         <div class="links">
+          {%- if pi.links.website %}<a href="{{ pi.links.website }}" target="_blank" rel="noopener">Website</a>{% endif -%}
           {%- if pi.links.scholar %}<a href="{{ pi.links.scholar }}" target="_blank" rel="noopener">Google Scholar</a>{% endif -%}
           {%- if pi.links.orcid %}<a href="{{ pi.links.orcid }}" target="_blank" rel="noopener">ORCID</a>{% endif -%}
           {%- if pi.links.email %}<a href="mailto:{{ pi.links.email }}">{{ pi.links.email }}</a>{% endif -%}

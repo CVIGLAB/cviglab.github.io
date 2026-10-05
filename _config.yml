@@ -9,7 +9,7 @@ url: https://cviglab.github.io
 baseurl: ""
 email: shanmuga@iitgn.ac.in
 address: Academic Block 13, Rooms 313 & 318, IIT Gandhinagar, Palaj, Gujarat 382355
-og_image: /assets/images/cviglogo.png
+og_image: /assets/images/hero-cvig.jpg
 
 markdown: kramdown
 exclude:
